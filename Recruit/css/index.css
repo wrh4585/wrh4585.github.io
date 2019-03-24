@@ -1,0 +1,262 @@
+@charset "utf-8";
+/* CSS Document */
+/********************reset*********************/
+body,h1,h2,h3,h4,h5,h6,p,a,img,input,ul,dl,li,ol,dd,dt,figure,figcaption
+{
+	padding:0;margin:0;
+}
+ul,ol{
+	list-style:none;
+}
+input{
+	outline:none; border:0;
+}
+img{
+	display:block;
+}
+a{
+	text-decoration:none;
+}
+body{
+	font-size:14px; 
+	font-family:"微软雅黑";
+	background: #f8f8f8;
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+html,body{
+	height:100%;
+}
+*{
+	box-sizing:border-box;
+}
+html{
+	font-size: 26.67vw
+}
+.gt::-webkit-scrollbar{
+	width: .0rem;
+}
+.gt::-webkit-scrollbar{
+	display: none;/*隐藏滚轮*/
+}
+.topbox{
+	display: flex;
+	justify-content: space-around;
+	height: .49rem;
+	background: #fff;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+}
+.inpbox{
+	width: 2.43rem;
+	height: 0.28rem;
+	background: #eaeaea;
+	border-radius: 26px;
+}
+.inpbox input{
+	width: 2rem;
+	height: 0.28rem;
+	background: #eaeaea;
+	vertical-align: middle;
+}
+.dan{
+	font-size: 20px;
+	line-height: .28rem;
+	vertical-align: middle;
+	color: #808080;
+
+}
+.cai{
+	font-size: 20px;
+	color: #333333;
+}
+.ron{
+	font-size: 24px;
+	color: #333333;
+}
+.on{
+	font-size: 20px;
+	color: #333333;
+}
+.lunbobox{
+	width: 3.75rem;
+	height: 1.49rem;
+}
+.newbox{
+	width: 100%;
+	height:2rem;
+	display: flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	background: #ffffff;
+	padding-top: .1rem;
+	margin-top:0.5rem;
+}
+.new{
+	width: .52rem;
+	height: .58rem;
+	display: flex;
+	/*justify-content: center;*/
+	align-items: center;
+	flex-direction: column;
+	margin: .16rem .1rem;
+
+}
+.new img{
+	width: .40rem;
+	height: .40rem;
+	border-radius: 50%;
+	display: block;
+
+}
+.new a{
+	display: block;
+	font-size: .11rem;
+	color: #606060;
+}
+
+/*限时抢购*/
+.qianggou{
+	width: 3.35rem;
+	height: 2.05rem;
+	background-color: #fff;
+	border-radius: .1rem;
+	margin:0 auto;
+	margin-top: .12rem;
+	margin-bottom: .03rem;
+	/*overflow-x: auto;*/
+
+}
+.qi{
+	display: flex;
+	justify-content: space-around;
+	padding-top: .16rem;
+}
+.ou p{
+	font-size: .15rem;
+	color:#333333;
+}
+.ang p{
+	font-size: .12rem;
+	color: #a6a6a6;
+	display: inline-block;
+}
+.ang a{
+	display: inline-block;
+	background: #333333;
+	width: .2rem;
+	height: .2rem;
+	border-radius: 5px;
+	color: #ffffff;
+	font-size: .06rem;
+	text-align: center;
+	line-height: .2rem;
+}
+.shang{
+	display: flex;
+	overflow-x: auto;
+	flex-wrap: nowrap;
+	margin-top: .16rem;
+}
+.shan{
+	width: .83rem;
+	height: 1.46rem;
+	text-align: center;
+	margin-left: .11rem;
+	flex-shrink: 0;
+}
+.shang::-webkit-scrollbar {width: 0px;}
+.shang::-webkit-scrollbar {display: none;/*隐藏滚轮*/}
+.shan img{
+	display: block;
+	width: .83rem;
+	height: .81rem;
+}
+.shan a{
+	display: block;
+	color:#333333;
+	font-size: .1rem;
+	width: .83rem;
+	height: .15rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.shan p{
+	color: #577bff;
+	font-size: .09rem;
+	padding: .12rem 0rem 0rem 0rem;
+}
+.shan b{
+	color: #a6a6a6;
+	font-size: .07rem;
+	text-decoration-line: line-through;
+}
+.foot{
+	width: 100%;
+	height: .49rem;
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.oot{
+	width: .50rem;
+	height: .49rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding-top: .07rem;
+}
+.mon{
+	font-size: .22rem;
+	color: #808080;
+}
+.oot b{
+	font-size: .09rem;
+	color: #808080;
+}
+.bun h3{
+	font-size: .14rem;
+	color: #333333;
+	font-weight: 100;
+	margin: .15rem 0rem .15rem .16rem;
+}
+.jingxuan{
+	display: flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+}
+.xuan{
+	margin-top: 0.08rem;
+}
+.uan{
+	width: 1.72rem;
+	height: .86rem;
+	background-color: #fff;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+}
+.un p{
+	font-size: .12rem;
+	color: #333333;
+}
+.un b{
+	font-size: .1rem;
+	color: #808080;
+}
+.xu a img{
+	display: block;
+	width: .70rem;
+	height: .85rem;
+}

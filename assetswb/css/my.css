@@ -1,0 +1,238 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"微软雅黑",Arial;
+    display:-webkit-flex;
+    -webkit-flex-direction:column;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+img{
+    display: block;
+    border:none;
+}
+
+html,body{
+    height:100%;
+}
+html{
+    font-size:26.67vw;
+}
+body,html{
+    overflow-x: hidden;
+}
+/* 头部 */
+.header{
+    width:100%;
+    height:.48rem;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header img:nth-of-type(1){
+    display: block;
+    width:.16rem;
+    height:.16rem;
+    margin-left:.14rem;
+}
+.header img:nth-of-type(2){
+    display: block;
+    width:.2rem;
+    height:.19rem;
+    margin-right:.14rem;
+}
+.headerA{
+    background: black;
+    display: flex;
+    padding-top:.17rem;
+    height:1.3rem;
+    position: relative;
+}
+.headerArightA{
+    display: flex;
+    margin-top:.14rem;
+}
+.headerAleft img{
+    display: block;
+    width:.69rem;
+    height:.69rem;
+    border-radius: 50%;
+    margin-left:.28rem;
+    margin-right:.18rem;
+}
+.headerArightA span{
+    font-size:.14rem;
+    color:#fff;
+    display: block;
+}
+.headerArightB p{
+    font-size:.1rem;
+    color:#c6c4a3;
+    border:1px solid #3e3e3e;
+    border-radius: .21rem;
+    width:1.59rem;
+    height:.21rem;
+    text-align: center;
+    line-height: .21rem;
+    margin-top:6px;
+}
+
+/* 金额 积分 */
+.navA{
+    width:3.53rem;
+    height:.62rem;
+    border-radius: 6px;
+    position: absolute;
+    top:1.64rem;
+    background: #fff;
+    margin-left:10px;
+    font-size:.11rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: #e5e5e5 6px 6px 6px;
+}
+.navA .nav span{
+    display: block;
+}
+.navA .nav span:nth-of-type(1){
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* 我的订单 */
+.orderA{
+    width:100%;
+    height:.75rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid #f6f6f6;
+}
+.orderC{
+    display: block;
+    font-size:.11rem;
+    margin-top:.5rem;
+    margin-left:.12rem;
+    font-weight: 800;
+}
+.orderB{
+    display: flex;
+    justify-content: space-between;
+    margin-right:7px;
+}
+.orderB span{
+    display: block;
+    font-size:.1rem;
+    color:#b6b6b6;
+    margin-top:.5rem;
+}
+.orderB img{
+    width:7px;
+    height:.12rem;
+    display: block;
+    margin-top:.52rem;
+    margin-left:8px;
+}
+
+.orderList{
+    height:.74rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.orderListA span{
+    font-size:.1rem;
+    display: block;
+    text-align: center;
+}
+
+.orderListA img{
+    width:.22rem;
+    height:.22rem;
+    display: block;
+    margin:0 auto;
+}
+.orderListA {
+    width:.4rem;
+    height:.5rem;
+}
+
+.orderPic{
+    width:100%;
+    height:.98rem;
+    background: #f1f1f1;
+    padding-top:.08rem; 
+}
+.orderPic img{
+    height:.9rem;
+    width:100%;
+    display:block;
+}
+
+/* 我的服务 */
+.mServer p{
+    font-size:.12rem;
+    font-weight: 600;
+    height:.38rem;
+    border-bottom: 1px solid #eee;
+    line-height: .38rem;
+    margin-left:.12rem;
+}
+.mserverB{
+    width:.58rem;
+    flex-shrink: 0;
+    margin:0 .17rem;
+}
+.mserverB img{
+    margin-top:.22rem;
+    display: block;
+    height:.33rem;
+    width:.33rem;
+    margin-bottom:.23rem;
+}
+.mserverB span{
+    display: block;
+    font-size:.1rem;
+}
+.mServerA{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 底部 */
+footer{
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+.footer{
+    width:.4rem;
+    text-align: center;
+}
+.footer span{
+    display: block;
+    font-size:.08rem;
+}
+.footer img{
+    margin:0 auto;
+    display: block;
+    width:.24rem;
+    height:.21rem;
+    margin-top:6px;
+    margin-bottom:5px;
+}
+
+.box{
+    flex: 1;
+    overflow-y: auto;
+}

@@ -1,0 +1,280 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 31.25vw;
+}
+
+body, html {
+    font-size: 1rem;
+    height: 100%;
+    background: #eee;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: none;
+}
+
+.top {
+    height: 2.9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.top input {
+    height: 2.25em;
+    width: 21.75em;
+    border-radius: 10px;
+    outline: none;
+    background: #eee;
+}
+
+.top a img {
+    width: 1.4em;
+    height: 1.6em;
+}
+
+.top a {
+    margin-left: 1em;
+}
+
+.op img {
+    height: 3.75em;
+}
+
+.op a {
+    display: block;
+    height: 60px;
+}
+
+.center {
+    display: flex;
+    margin-top: 0.5em;
+    background: #fff;
+    width: 100%;
+    height: 21.46em;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: column; */
+}
+
+.center-top {
+    width: 21.25em;
+    height: 9.3em;
+    margin-top: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+
+.center-top h1 {
+    font-size: 2.28rem;
+    color: #29be9f;
+    text-align: center;
+    margin-top: 54px;
+}
+
+.center-top p {
+    margin-top: 15px;
+    text-align: center;
+    color: #a1a1a1;
+    font-size: 0.71em;
+}
+
+.center-top img {
+    height: 0.78em;
+    width: 0.84em;
+    cursor: pointer;
+}
+
+.center-bottom {
+    width: 21.25em;
+    margin: 0 auto;
+}
+
+.center-bottom-one {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2.5em;
+}
+
+.center-bottom b {
+    display: block;
+    text-align: center;
+    color: #666666;
+    font-weight: 900;
+    font-size: 1.34em;
+}
+
+.center-bottom a {
+    font-size: 0.81em;
+    color: #9999;
+}
+
+.xx {
+    display: block;
+    width: 8.625em;
+    height: 2.625em;
+    background: #28bea0;
+    color: #ffffff;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 2.625em;
+    /* margin-top:34px; */
+    margin: 34px auto;
+}
+
+.down {
+    margin-top: 0.375em;
+    background: #fff;
+    height: 5.875em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.down img {
+    width: 1.625em;
+    height: 1.78em;
+    display: block;
+    margin: 0 auto;
+}
+
+.down span {
+    display: block;
+    margin-bottom: 0.625em;
+}
+
+.down a {
+    display: inline-block;
+    font-size: 0.843em;
+    color: #6f6f6f;
+}
+
+.hh {
+    height: 11.875em;
+    background: #fff;
+    margin-top: 0.375em;
+    display: flex;
+    flex-direction: column;
+}
+
+.hh h3 {
+    font-size: 0.843em;
+    color: #b3b3b3;
+    font-weight: 100;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 0.875em;
+}
+
+.hh-li {
+    display: flex;
+    height: 8.125em;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: none;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.hh-li ul {
+    overflow-y: none;
+    display: flex;
+    /* justify-content: space-around; */
+    overflow-x: none;
+    flex-direction: row;
+    width: 100%;
+}
+
+.hh-li li a img {
+    width: 6.718em;
+    height: 8.0625em;
+    display: block;
+    color: #6f6f6f;
+}
+
+.hh-li li {
+    display: inline-block;
+    margin-left: 10px;
+    /* flex-wrap: nowrap; */
+}
+
+.do {
+    height: 8.2815em;
+    margin-top: 0.375em;
+    background: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.do-l img, .do-r img {
+    display: block;
+    width: 10.28125em;
+    height: 5.59375em;
+}
+
+.do-l, .do-r {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.do span {
+    margin: 0 auto;
+    color: #6b6b6b;
+    font-size: 0.843em;
+}
+
+
+
+/* -------------底部---------- */
+.bottom a:first-child {
+    color: #209e85;
+}
+.bottom {
+    height: 3.0625em;
+    border-top: 1px solid #b2b2b2;
+    display: flex;
+    /* color: #6f6f6f; */
+    background: #fafafa;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.625em;
+}
+
+.bottom img {
+    width: 1.718em;
+    height: 1.43em;
+    display: block;
+    margin: 0 auto;
+}
+
+.bottom a {
+    color: #6f6f6f;
+}
+
+.bottom span {
+    display: block;
+}

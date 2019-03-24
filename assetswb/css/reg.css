@@ -1,0 +1,77 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+    margin:0;
+    padding:0;
+}
+/* body{
+    font-family:"微软雅黑",Arial;
+    background:#f0f0f0;
+    display:-webkit-flex;
+    -webkit-flex-direction:column;
+} */
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+img{
+    display: block;
+    border:none;
+}
+
+/* html,body{
+    height:100%;
+} */
+html{
+    font-size:26.67vw;
+}
+
+/* 头部 */
+.header img{
+    display: block;
+    width:.11rem;
+    height:.17rem;
+    margin-top:.15rem;
+    margin-left:.15rem;
+    margin-bottom: .44rem;
+}
+.header p{
+    text-align: center;
+    font-size:.2rem;
+    margin-bottom: .2rem;
+}
+.header p:nth-of-type(2){
+     font-size:.11rem;
+     margin-bottom:.32rem;
+}
+.header span{
+    font-size:.11rem;
+}
+
+/* 内容 */
+section input{
+    font-size:.12rem;
+    color:#d5d5d5;
+    border:0;
+    outline: none;
+    width:3.22rem;
+    height:.33rem;
+    display: block;
+    border-bottom: 2px solid #f1f1f1;
+    margin:0 auto;
+    margin-bottom: .17rem;
+    text-indent: .15rem;
+}
+.reg{
+    height:.41rem;
+    color:#fff;
+    margin-top:.38rem;
+}
+.agreement{
+    font-size:.12rem;
+    margin-left:20%;
+    margin-top:.3rem;
+}
+.agreement span{
+    color:#cfae80;
+}

@@ -1,0 +1,78 @@
+html{
+    font-size: 26.67vw;
+}
+body{
+    background: #f2f2f2;
+}
+/* header */
+.header{
+    position: relative;
+    height: .43rem;
+    background: white;
+    border-bottom: 1px solid #DCDCDC;
+    font-size: .15rem;
+    line-height: .43rem;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+.header img{
+    position: absolute;
+    left: .13rem;
+    top: .13rem;
+    width: .11rem;
+    height: .14rem;
+}
+/* section */
+.divItem{
+    width: 100%;
+    height: .45rem;
+    background: white;
+    margin-bottom: .14rem;
+    display: -webkit-flex;
+}
+.divItem .divItem_p{
+    width: 28%;
+    height: 100%;
+    font-size: .15rem;
+    color: #222222;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    text-indent: .14rem;
+    
+}
+.divItem .divItem_input{
+    width: 42%;
+    height: 100%;
+    font-size: .15rem;
+    color: #777777;
+    
+}
+.divItem .yzm{
+    border-left: 1px solid #DCDCDC;
+}
+.divItem .pw_reg{
+    width: 58%;
+}
+.submitReg{
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+}
+.submitReg input{
+    width: 3.47rem;
+    height: .38rem;
+    background: #ff6600;
+    border-radius: .04rem;
+    font-size: .17rem;
+    color: white;
+    line-height: .38rem;
+    text-align: center;
+}
+.vipReg{
+    font-size: 13px;
+    color: #222222;
+    text-align: right;
+    padding-right: .18rem;
+    margin-top: .11rem;
+}

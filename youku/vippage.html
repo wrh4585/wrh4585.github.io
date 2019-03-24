@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<title>VIP会员</title>
+<link rel="stylesheet" href="../youku/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="../youku/css/common.css">
+<link rel="stylesheet" type="text/css" href="../youku/css/vip.css">
+
+</head>
+<body>
+<!--header-->
+    <header>
+        <div class="header01">
+            <div class="viptop">
+                <img src="../youku/img/viptop03.png" alt="">
+                <a href="#"><img src="../youku/img/icon03.png" alt=""></a>
+            </div>
+            <!--<div class="viplbt">-->
+                <!--<img src="img/viplbt01.jpg" alt="">-->
+            <!--</div>-->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../youku/img/viplbt01.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../youku/img/viplbt01.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../youku/img/viplbt01.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../youku/img/viplbt01.jpg" alt="">
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="vipmsg_box">
+                <div class="vipmsg">
+                    <div class="vipmsg01">
+                        <img src="../youku/img/vipmsg01.jpg" alt="">
+                        <div class="vipname">
+                            <span><h4>H夕C夕</h4><img src="../youku/img/vipmsg02.jpg" alt=""></span>
+                            <span>酷喵VIP<b>2019-02-09</b>到期</span>
+                        </div>
+                        <div class="xufei">
+                            <span>续费</span>
+                        </div>
+                    </div>
+                    <div class="vipmsg02">
+                        <div class="viprights">
+                            <h3><img src="../youku/img/vip_v.jpg" alt="">&nbsp;<span>我的权益专区</span></h3>
+                            <img src="../youku/img/vip_arow.jpg" alt="" id="arowImg">
+                        </div>
+                        <div class="sellA">
+                            <a href="#"><img src="../youku/img/vipsell01.jpg" alt="">年卡6折</a>
+                            <a href="#"><img src="../youku/img/vipsell02.jpg" alt="">限时抽奖</a>
+                            <a href="#"><img src="../youku/img/vipsell03.jpg" alt="">观影卷(2)</a>
+                            <a href="#"><img src="../youku/img/vipsell04.jpg" alt="">卡卷包</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header02">
+            <div class="headerA">
+                <a href="#">精选</a>
+                <a href="#">壹周刊</a>
+                <a href="#">俱乐部</a>
+                <a href="#">电影</a>
+                <a href="#">剧集</a>
+                <a href="#">短视频</a>
+            </div>
+        </div>
+    </header>
+<!--section-->
+    <section>
+        <div class="section_box">
+            <img class="sectionImg" src="../youku/img/section01.jpg" alt="">
+            <div class="sectionA">
+                <a href="#"><img src="../youku/img/sectionA01.jpg" alt=""></a>
+                <a href="#"><img src="../youku/img/sectionA02.jpg" alt=""></a>
+                <a href="#"><img src="../youku/img/sectionA01.jpg" alt=""></a>
+                <a href="#"><img src="../youku/img/sectionA02.jpg" alt=""></a>
+                <a href="#"><img src="../youku/img/sectionA01.jpg" alt=""></a>
+                <a href="#"><img src="../youku/img/sectionA02.jpg" alt=""></a>
+            </div>
+        </div>
+    </section>
+<!--footer-->
+    <footer>
+        <a href="index.html"><img src="../youku/img/footer06.jpg" alt=""><span>首页</span></a>
+        <a href="discover.html"><img src="../youku/img/footer02.jpg" alt=""><span>发现</span></a>
+        <a href="vippage.html"><img src="../youku/img/footer08.jpg" alt=""><span>VIP会员</span></a>
+        <a href="planet.html"><img src="../youku/img/footer04.jpg" alt=""><span>星球</span></a>
+        <a href="mine.html"><img src="../youku/img/footer05.jpg" alt=""><span>我的</span></a>
+    </footer>
+    <script src="../youku/js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: 'horizontal', // 垂直切换选项
+            loop: true, // 循环模式选项
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        });
+        var arowBtn=document.getElementById("arowImg");
+        var count = 0;
+        arowBtn.onclick = function(){
+            count++;
+            // console.log(count);
+            if(count%2!=0){
+                document.getElementsByClassName("sellA")[0].style.display="none";
+                arowBtn.src="img/vip_arow02.jpg";
+                document.getElementsByClassName("vipmsg")[0].style.height="1.05rem";
+                document.getElementsByClassName("vipmsg_box")[0].style.height="0.83rem";
+            }else{
+                document.getElementsByClassName("sellA")[0].style.display="";
+                arowBtn.src="img/vip_arow.jpg";
+                document.getElementsByClassName("vipmsg")[0].style.height="1.72rem";
+                document.getElementsByClassName("vipmsg_box")[0].style.height="1.5rem";
+            }
+        }
+    </script>
+</body>
+</html>

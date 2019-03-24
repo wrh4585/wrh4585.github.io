@@ -1,0 +1,245 @@
+@charset "utf-8";
+/*css document*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 26.67vw;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family:"微软雅黑";
+    display: -webkit-flex;
+    -webkit-flex-direction:column;
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    border:none;
+    display: block;
+}
+/*header*/
+.h01{
+    height: .33rem;
+    width: 100%;
+    display: -webkit-flex;
+    background-color: #654a4e;
+}
+.h01_left{
+    display: flex;
+    width: .97rem;
+    -webkit-align-items: center;
+}
+.h01_left img{
+    width: .27rem;
+    height: .16rem;
+    margin-left: .14rem;
+    margin-right: .11rem;
+}
+.h01_left a{
+    font-size:.16rem;
+    font-weight: 800;
+    color: white;
+}
+.h01_right{
+    display: -webkit-flex;
+    flex: 1;
+    overflow-x: auto;
+    -webkit-align-items: center;
+}
+.h01_right a{
+    font-size: .16rem;
+    color:#c8bfc0;
+    -webkit-flex-shrink: 0;
+    padding:0 .11rem;
+}
+.h02{
+    display: flex;
+    background-color: #654a4e;
+    height: .3rem;
+}
+.search{
+    display: -webkit-flex;
+    width: 2.65rem;
+    font-size: 12px;
+    background: rgba(69,51,54,.6);
+    color: #b5aeaf;
+    border-radius: .15rem;
+    -webkit-align-items:center;
+    margin:0 .13rem;
+}
+.search span{
+    margin-left: .5rem;
+    margin-right: .4rem;
+}
+.search img:nth-child(2){
+    width: 1px;
+    height: .1rem;
+    margin-right: .13rem;
+}
+.search img:nth-child(3){
+    width: .15rem;
+    height: .15rem;
+}
+.xtb{
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+    background: rgba(69,51,54,.6);
+    color: white;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+}
+.iconfont{
+    display: block;
+}
+.xtb:last-child{
+    margin-left: .1rem;
+}
+.swiper-container{
+    width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide img{
+    width: 100%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: -18px;
+}
+.menu{
+    display: -webkit-flex;
+}
+.menu a {
+    -webkit-flex: 1;
+    text-align: center;
+}
+.menu a img{
+    width: .52rem;
+    height: .53rem;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.menu a span{
+    margin-top: .08rem;
+    color: #787878;
+    font-size: 10px;
+    display: block;
+}
+/*section*/
+section{
+    margin-top: .34rem;
+    -webkit-flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.watch_top{
+    height: .18rem;
+    text-align: justify;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: space-between;
+}
+.watch_top h3{
+    font-size: .17rem;
+    margin-left: .13rem;
+}
+.watch_top a{
+    color: #b5aeaf;
+    font-size: .12rem;
+    margin-right: .18rem;
+}
+.wacth_content{
+    display: -webkit-flex;
+    width: 100%;
+    margin-top: .15rem;
+    overflow-x: auto;
+}
+.wacth_content a{
+    margin-right: .03rem;
+}
+.wacth_content img{
+    width:1.4rem;
+    height: .79rem;
+}
+.wacth_content span{
+    display: block;
+    text-indent: .1rem;
+}
+.wacth_content span:nth-child(2){
+    font-size: .14rem;
+    color: black;
+    width: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: .11rem;
+}
+.wacth_content span:nth-child(3){
+    font-size: .11rem;
+    color: #a9a9a9;
+}
+.hot{
+    margin-top: .34rem;
+}
+.hot_content{
+    display: -webkit-flex;
+    margin-top: .15rem;
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+}
+.hot_content a{
+    margin-bottom: .21rem;
+}
+.hot_content img{
+    width: 1.86rem;
+    height: 1.05rem;
+}
+.hot_content span{
+    display: block;
+    text-indent: .1rem;
+}
+.hot_content span:nth-child(2){
+    font-size: .14rem;
+    color: black;
+    width: 1.3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: .11rem;
+}
+.hot_content span:nth-child(3){
+    font-size: .11rem;
+    color: #a9a9a9;
+}
+/*footer*/
+footer{
+    height: .5rem;
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    border-top: 1px solid #b2b2b2;
+}
+footer a{
+    -webkit-flex: 1;
+    text-align: center;
+}
+footer a img{
+    width: .27rem;
+    height: .22rem;
+    margin: 0 auto;
+}
+footer a span{
+    display: block;
+    font-size: .1rem;
+    color: #686868;
+}
+footer a:nth-child(1) span{
+    color: #10abff;
+}

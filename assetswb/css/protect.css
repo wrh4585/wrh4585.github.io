@@ -1,0 +1,269 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+    margin:0;
+    padding:0;
+}
+/* body{
+    font-family:"微软雅黑",Arial;
+    background:#f0f0f0;
+    display:-webkit-flex;
+    -webkit-flex-direction:column;
+} */
+body{
+    overflow-x:hidden;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+img{
+    display: block;
+    border:none;
+}
+
+/* html,body{
+    height:100%;
+} */
+html{
+    font-size:26.67vw;
+}
+/* 头部 */
+header{
+    width:100%;
+    height:.4rem;
+    border-bottom: 2px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    width:8px;
+    height:.17rem;
+    margin-left:.15rem;
+    margin-right:.87rem;
+}
+header span{
+    font-size:.14rem;
+    display: block;
+}
+/* 导航栏 */
+nav{
+    width:100%;
+    height:.41rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:.19rem;
+}
+.nav img:nth-of-type(1){
+    width:.12rem;
+    height:.13rem;
+    display: block;
+    margin-right: 6px;
+}
+.nav span{
+    display: block;
+    font-size:.12rem;
+    margin-right: 6px;
+}
+.nav img:nth-of-type(2){
+    display: block;
+    width:6px;
+    height:.1rem;
+}
+.nav{
+    display: flex;
+    width:.61rem;
+    align-items:center;
+    margin-left:9px;
+}
+.navA{
+    display: block;
+    font-size: .18rem;
+    color:#794821;
+    font-weight:700;
+}
+.navB{
+    display: block;
+    width:.35rem;
+    height:.35rem;
+    border-radius: 50%;
+    margin-right:7px;
+}
+
+/* 轮波图 */
+.pic{
+    width:100%;
+    height:1.44rem;
+    background: #d8d8d8;
+    margin-bottom: .39rem;
+}
+/* 服务指南 */
+.serverlist{
+  display: flex;
+  justify-content: space-around;  
+}
+.serverlistA{
+    width:.55rem;
+}
+.serverlistA img{
+    display: block;
+    width:.38rem;
+    height:.38rem;
+    margin:0 auto;
+}
+.serverlistA span{
+    display: block;
+    font-size:.13rem;
+    text-align: center;
+    margin-top:.2rem;
+}
+.serA{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: .15rem;
+}
+.serAleft{
+    display: flex;
+    width:1.66rem;
+    height:.77rem;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    border:1px solid #f2f2f2;
+    margin-top:.56rem;
+}
+.serAleftA{
+    margin-left:.12rem;
+}
+.serAleftA span:nth-of-type(1){
+    font-size:.12rem;
+    display: block;
+}
+.serAleftA span:nth-of-type(2){
+    font-size:.11rem;
+    display: block;
+    color:#7f7f7f;
+    margin-top:8px;
+}
+.serAleft img{
+    display: block;
+    width:.32rem;
+    height:.32rem;
+    border-radius: 50%;
+}
+/* 服务项目 */
+.project{
+    background: #f1f1f1;
+    padding-top:.14rem;
+    padding-bottom: .14rem;
+}
+.projectA{
+    background: #fff;
+}
+.projectB{
+    height:.35rem;
+    display: flex;
+    align-items: center;
+}
+.projectB span:nth-of-type(1){
+    display: block;
+    width: 4px;
+    height:.15rem;
+    border-radius: 2px;
+    background:#cbaf94;
+    margin-right:.12rem;
+}
+.projectB span:nth-of-type(2){
+    font-size: .14rem;
+    font-weight: 800;
+    display: block;
+}
+.fser{
+    display: flex;
+    overflow-x: auto;
+    background: #fff;
+}
+.fserA{
+    width:1.25rem;
+    height:1.35rem;
+    border:1px solid #ededed;
+    border-radius: 6px;
+    margin-left:.15rem;
+    flex-shrink: 0;
+}
+.fserA img{
+    width:.54rem;
+    height:.54rem;
+    border-radius: 50%;
+    margin:0 auto;
+    margin-top:10px;
+    margin-bottom:12px;
+}
+.fserA span{
+    text-align: center;
+}
+.fserA span:nth-of-type(1){
+    display: block;
+    font-size:.13rem;
+    margin-bottom:10px;
+}
+.fserA span:nth-of-type(2){
+    display: block;
+    font-size:.11rem;
+    color:#6e6e6e;
+}
+
+/* 关于我们 */
+.projectA{
+    background: #fff;
+}
+.projectB{
+    height:.35rem;
+    display: flex;
+    align-items: center;
+}
+.projectB span:nth-of-type(1){
+    display: block;
+    width: 4px;
+    height:.15rem;
+    border-radius: 2px;
+    background:#cbaf94;
+    margin-right:.12rem;
+}
+.projectB span:nth-of-type(2){
+    font-size: .14rem;
+    font-weight: 800;
+    display: block;
+}
+.projectA img{
+    width:3.45rem;
+    height:1.22rem;
+    display: block;
+    margin:0 auto;
+}
+
+/* 底部 */
+footer{
+    width:100%;
+    height:.46rem;
+    border-top:1px solid #6e6e6e;
+    margin-top:.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.footerA{
+    width:.27rem;  
+}
+.footerA img{
+    display: block;
+    width:.22rem;
+    height:.22rem;
+}
+.footerA span{
+    font-size:8px;
+    color:#bfbfbf;
+    display: block;
+}

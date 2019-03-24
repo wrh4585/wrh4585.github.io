@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd,p,input,select,textarea,td{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 27.78vw;
+}
+html,body{
+    /*height: 100%;*/
+}
+body{
+    font-family:"微软雅黑";
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration:none;
+}
+ul,ol{
+    list-style:none;
+}
+img{
+    border:0;
+    display: block;
+}
+
+/*header*/
+header{
+    width: 100%;
+    height: .53rem;
+    background: #ffffff;
+    margin-bottom: .08rem;
+}
+.header-One{
+    height: .53rem;
+    color: #000000;
+    font-size: .14rem;
+    font-weight: 600;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+}
+.header-One a{
+    width: .31rem;
+    height: .31rem;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    margin: 0 .08rem;
+}
+.header-One img{
+    width: .13rem;
+    height: .13rem;
+}
+section img{
+    width: 1.39rem;
+    height: 1.51rem;
+    margin: .96rem auto 1.9rem;
+}
+.section-01{
+    height: 100%;
+    margin-left: .12rem;
+}
+.section-01 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: .14rem;
+    height: 100%;
+    width: 100%;
+}
+.section1-A{
+    width: 3.36rem;
+    height: .43rem;
+    background: #1d82ff;
+    margin-bottom: .16rem;
+}
+.section1-B{
+    width: 3.36rem;
+    height: .43rem;
+    background: #46c800;
+}
+.section-01 p{
+    color: #969696;
+    font-size: .11rem;
+    margin: .13rem 0 0 .76rem;
+}

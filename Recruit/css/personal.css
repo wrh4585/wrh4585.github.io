@@ -1,0 +1,291 @@
+@charset "utf-8";
+/* CSS Document */
+/********************reset*********************/
+body,h1,h2,h3,h4,h5,h6,p,a,img,input,ul,dl,li,ol,dd,dt,figure,figcaption
+{
+    padding:0;margin:0;
+}
+ul,ol{
+    list-style:none;
+}
+input{
+    outline:none; border:0;
+}
+img{
+    display:block;
+}
+a{
+    text-decoration:none;
+}
+body{
+    font-size:14px;
+    font-family:"微软雅黑";
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+}
+html,body{
+    height:100%;
+}
+*{
+    box-sizing:border-box;
+}
+html{
+
+    font-size: 26.67vw
+}
+.person{
+    flex: 1;
+    overflow-y: auto;
+}
+.person::-webkit-scrollbar {
+    display: none;
+}
+
+/*顶部*/
+.son{
+    width: 100%;
+    height: .65rem;
+    background: #fff;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.son a{
+    display: inline-block;
+    margin-right: .25rem;
+
+}
+.son a img{
+    width: .20rem;
+    height: .20rem;
+}
+.tou{
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.xiang{
+    width: 1.53rem;
+    height: .60rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.xi a img{
+    display: block;
+    width: .59rem;
+    height: .59rem;
+    border-radius: 50%;
+}
+.ia p{
+    font-size: .15rem;
+    color: #333333;
+}
+.ia b{
+    font-size: .08rem;
+    color: #707070;
+}
+.ang a{
+    display: inline-block;
+    width: .90rem;
+    height: .28rem;
+    background: #464646;
+    color: #ececec;
+    font-size: .11rem;
+    line-height: .28rem;
+    text-align: center;
+    border-radius:.13rem;
+}
+.ang a img{
+    display: inline-block;
+    width: .18rem;
+    height: .15rem;
+    vertical-align: middle;
+}
+.news{
+    display: flex;
+    justify-content: space-around;
+    padding-top: .30rem;
+    padding-bottom: .26rem;
+    background: white;
+}
+.ws{
+    width: .52rem;
+    height: .54rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.ws a img{
+    display: block;
+    width: .28rem;
+    height: .28rem;
+    border-radius: 50%;
+}
+.ws b{
+    font-size: .11rem;
+    color: #333333;
+    padding-top: .1rem;
+}
+.fuli{
+    height: 1.7rem;
+    background: #fff;
+    margin-top: .1rem;
+}
+.fu{
+    display: flex;
+    justify-content: space-between;
+    padding-top: .4rem;
+}
+.u{
+    padding-left: .2rem;
+}
+.u img{
+    display: inline-block;
+    width: .26rem;
+    height: .30rem;
+    vertical-align: middle;
+}
+.u b{
+    font-size: .13rem;
+    color: #595959;
+    padding-left: .18rem;
+}
+.t{
+    padding-right: .15rem;
+}
+.t a{
+    background: #577bff;
+    color: #fff;
+    font-size: .1rem;
+    display: inline-block;
+    width: .6rem;
+    height: .28rem;
+    border-radius: .16rem;
+    text-align: center;
+    line-height: .28rem;
+}
+.ed{
+    margin-top: .4rem;
+    background: white;
+    height: 1.4rem;
+}
+.mo{
+    margin-top: .1rem;
+    background: white;
+    height: 1.4rem;
+}
+.fun{
+    display: flex;
+    justify-content: space-between;
+    padding-top: .15rem;
+}
+.fun b{
+    font-size: .13rem;
+    color: #4f4f4f;
+    padding-left: .15rem;
+}
+.fun p{
+    color: #838383;
+    font-size: .08rem;
+}
+.fun img {
+    display: inline-block;
+    width: .06rem;
+    height: .11rem;
+    vertical-align: middle;
+    margin-right: .15rem;
+}
+.rto{
+    display: flex;
+    justify-content: space-around;
+    margin-top: .33rem;
+
+}
+.rto a {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: .45rem;
+    height: .53rem;
+}
+.rto a img{
+    display: block;
+    width: .24rem;
+    height: .18rem;
+}
+.rto span{
+    color: #636363;
+    display: block;
+    font-size: .08rem;
+    padding-top: .1rem;
+}
+
+/*底部*/
+.foot{
+    height: .49rem;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #f3f3f3;
+}
+.oot{
+    width: .50rem;
+    height: .49rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: .07rem;
+}
+.mon{
+    font-size: .22rem;
+    color: #808080;
+}
+.oot b{
+    font-size: .09rem;
+    color: #808080;
+}
+.gt{
+    flex: 1;
+    overflow-y: auto;
+}
+.bun h3{
+    font-size: .14rem;
+    color: #333333;
+    font-weight: 100;
+    margin: .15rem .0rem .15rem .16rem;
+}
+.jingxuan{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+.xuan{
+    margin-top: 0.08rem;
+}
+.uan{
+    width: 1.72rem;
+    height: .86rem;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.un p{
+    font-size: .12rem;
+    color: #333333;
+}
+.un b{
+    font-size: .1rem;
+    color: #808080;
+}
+.xu a img {
+    display: block;
+    width: .70rem;
+    height: .85rem;
+}

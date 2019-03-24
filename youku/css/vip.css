@@ -1,0 +1,233 @@
+@charset "utf-8";
+/*css document*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 26.67vw;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family:"微软雅黑";
+    background-color: #f9fafc;
+    display: -webkit-flex;
+    -webkit-flex-direction:column;
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    border:none;
+    display: block;
+}
+/*header*/
+header{
+    /*height: 4.05rem;*/
+}
+.header01{
+    width: 100%;
+    position: relative;
+}
+.viptop{
+    width: 100%;
+    position: absolute;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    margin-top: .3rem;
+    z-index: 2;
+}
+.viptop img:first-child{
+    width: .31rem;
+    height: .29rem;
+    margin-left: .15rem;
+}
+.viptop img:last-child{
+    width: .2rem;
+    height: .19rem;
+    margin-right: .2rem;
+}
+/*.viplbt{*/
+    /*width: 100%;*/
+/*}*/
+/*.viplbt img{*/
+    /*width: 100%;*/
+/*}*/
+.swiper-container{
+    width: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide img{
+    width: 100%;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    left: 140px;
+}
+.vipmsg_box{
+    width: 100%;
+    position: relative;
+    height: 1.5rem;
+    z-index: 3;
+}
+.vipmsg{
+    height: 1.72rem;
+    width: 3.6rem;
+    background-color: white;
+    border-radius: 8px;
+    position: absolute;
+    top:-0.22rem ;
+    left:.1rem ;
+    box-shadow: -1px 1px 1px 2px #f0f3f5;
+}
+.vipmsg01{
+    height: .61rem;
+    width: 3.35rem;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    border-bottom: 1px solid #b5aeaf61;
+    margin: 0 auto;
+}
+.vipmsg01 img{
+    width: .47rem;
+    height: .45rem;
+}
+.vipname{
+    width: 1.84rem;
+    /*background-color: #007aff;*/
+}
+.vipname span{
+    display: -webkit-flex;
+    -webkit-align-items: center;
+}
+.vipname span:last-child{
+    color: #9c9c9c;
+    font-size: .12rem;
+}
+.vipname span:last-child b{
+    color: #c7aa71;
+    font-size: .12rem;
+    /*font-weight: 100;*/
+}
+.vipname span h4{
+    font-size: .12rem;
+    color: black;
+}
+.vipname span img{
+    width: .42rem;
+    height: .15rem;
+}
+
+.xufei span{
+    display: block;
+    width: .83rem;
+    height: .3rem;
+    border-radius: .15rem;
+    background-color: #e2bb6d;
+    color: black;
+    font-size: .12rem;
+    text-align: center;
+    line-height: .3rem;
+}
+.vipmsg02{
+    width: 3.35rem;
+    margin: 0 auto;
+}
+.viprights{
+    display: -webkit-flex;
+    height: .15rem;
+    -webkit-justify-content: space-between;
+    margin: .1rem 0;
+}
+.viprights h3{
+    font-size: .12rem;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+}
+
+.viprights img{
+    width: .16rem;
+    height: .15rem;
+}
+.sellA{
+    display: -webkit-flex;
+    -webkit-align-items: center;
+}
+.sellA a{
+    flex: 1;
+    font-size: .12rem;
+    color: black;
+    text-align: center;
+}
+.sellA a img{
+    width: .53rem;
+    height: .48rem;
+    margin: 0 auto 3px;
+}
+.header02{
+    /*height:.22rem ;*/
+    margin-top: .22rem;
+    /*display: -webkit-flex;*/
+    /*-webkit-justify-content: space-between;*/
+}
+.headerA{
+    height:.22rem ;
+    width: 3.35rem;
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    margin: 0 auto;
+}
+.headerA a{
+    font-size: .15rem;
+    color: black;
+}
+.headerA a:first-child{
+    font-size: .17rem;
+    font-weight: 800;
+}
+/*section*/
+section{
+
+    width: 100%;
+    margin-top: .18rem;
+    -webkit-flex:1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin: 0 auto;
+}
+.section_box{
+    width: 3.47rem;
+    margin: 0 auto;
+}
+.sectionImg{
+    width: 3.47rem;
+    height: .88rem;
+}
+.sectionA{
+    margin-top: .15rem;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+.sectionA a{
+    flex: 1;
+    margin-bottom: 5px;
+}
+.sectionA a img{
+    width: 1.68rem;
+    height: .9rem;
+    border-radius: 10px;
+}
+/*footer*/
+footer{
+    background-color: white;
+    border-top-color: #b2b2b226;
+}
+footer a:nth-child(3) span{
+    color: #dfae45;
+}

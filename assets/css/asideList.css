@@ -1,0 +1,179 @@
+@charset "utf-8";
+/*css document*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size: 26.67vw;
+}
+html,body{
+	height: 100%;
+}
+body{
+	display: -webkit-flex;
+    -webkit-flex-direction:column;
+
+ }
+ul,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+	display: block;
+}
+
+.totalAside{
+  overflow-y: auto;
+}
+/* header */
+header{
+    width: 3.08rem;
+    height: 1.62rem;
+    background-image: url(../img/hathy.jpg);
+    background-size: 3.08rem 1.62rem;
+}
+.singInfo{
+    width: 2.89rem;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    height: 1.62rem;;
+}
+.singInfo img{
+    width: .67rem;
+    height: .67rem;
+    border-radius: 50%;
+    position: absolute;
+    top: .44rem;
+}
+.vipLever{
+    width: 100%;
+    height: .5rem;
+    display: flex;
+    position: absolute;
+    bottom: .1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.vipAction span{
+    font-size: .16rem;
+    color: #ffffff;
+    display: block;
+}
+.vipAction p{
+    font-size: 10px;
+    color:  #ffffff;
+    width: .27rem;
+    height: .12rem;
+    border-radius: .06rem;
+    border: 1px solid #fff;
+    line-height: .12rem;
+    text-align: center;
+    margin-left: .08rem;
+    margin-top: .04rem;
+}
+.vipAction{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign{
+    width: .64rem;
+    height: .24rem;
+    color: #ffffff;
+    border-radius: .12rem;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-size: .12rem;
+}
+.sign .iconfont{
+    font-size: 12px;
+    margin-left: .05rem;
+}
+/* section */
+section{
+    width: 3.08rem;
+    border-bottom: 1px solid #f7f7f7;
+}
+section .singNewList:nth-child(2){
+  border-bottom: .06rem solid #f7f7f7;
+  border-top: .06rem solid #f7f7f7
+
+}
+.singNewList{
+  width:  2.9rem;
+  margin: 0 auto;
+}
+.myNewBox{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: .42rem;
+}
+.asideTiten{
+  font-size: .16rem;
+  color: #393939;
+  display: block;
+}
+.asideNumber{
+  font-size: 10px;
+  color: #fff;
+  width: .22rem;
+  height: .18rem;
+  background-color: #de3f3f;
+  border-radius: .1rem;
+  text-align: center;
+  line-height: .18rem;
+  display: block
+}
+.asideVip{
+  font-size: .12rem;
+  color: #747474;
+  display: block;
+}
+.myNewBox p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.myNewBox p .iconfont{
+  display: block;
+  margin-right: .1rem;
+}
+/* footer */
+footer{
+  width: 3.08rem;
+
+}
+.asideLastBox{
+  width:  2.9rem;
+  height: .47rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.asideLastBox p{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.asideLastBox .iconfont{
+  font-size: .18rem;
+  color: #464646;
+  display: block;
+  margin-right: .05rem;
+}
+.asideOther{
+  font-size: .16rem;
+  color: #1c1c1c;
+  display: block;
+}

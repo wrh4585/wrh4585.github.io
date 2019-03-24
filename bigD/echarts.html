@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+	body{
+		background: url(images/timg2.jpg) center no-repeat;
+		background-size:100% 100%;
+	}
+	.imga{
+		width:200px;
+		height:200px;
+		position:absolute;
+		left:0;
+		top:-40px;
+	}
+	.slide img{
+		width:100%;
+		height:100%;
+	}
+	#options{
+    top: 31px;
+	right:42px;
+    position: absolute;
+}
+#options ul{
+    display: flex;
+    font-size: 20px;
+}
+#options ul li{
+	background:white;
+    width: 100px;
+    height: 50px;
+    outline: none;
+    line-height: 50px;
+    border: 1px solid;
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transform: translate(0);
+    transition: color .2s,transform .2s;
+}
+#options a{
+	display:block;
+    color: #4062bb;
+	height:100%;
+    font-weight: 600;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+#options #bigData{
+	color:white;
+}
+#options #bigData1{
+	background:#999999;
+}
+</style>
+<title>Bigdata</title>
+
+<link href="style/screen.css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/modernizr.min.js"></script>
+
+</head>
+<body><div id="options">
+		<ul>
+			<li><a href="../mobileCase.html">移动端</a></li>
+			<li><a href="../Pc/index.html">pc端</a></li>
+			<li id='bigData1'><a href="javascript:;"  id='bigData'>大数据</a></li>
+			<li><a href="https://github.com/wrh4585/manageSystem">后台系统</a></li>
+		</ul>
+	</div>
+		<div class='tip'><a href="../index.html" style="display: block;width: 100px;height: 50px;background-color: cyan;font-size: 30px;line-height: 50px;text-align: center;border: 1px solid black;border-radius: 8px;position: absolute;top: 30px;left: 20px;">Back</a></div>
+<div id="page" style='margin-top:150px;'>
+	<h1 style='line-height: 28px;font-size:28px;text-align:center;margin-bottom:40px;'>大数据可视化</h1>
+	<div id="viewport-shadow" class="trans">
+		<a href="#" id="prev" title="go to the next slide" class="trans"></a>
+		<a href="#" id="next" title="go to the next slide" class="trans"></a>
+		<div id="viewport">
+			<div id="box">
+				<figure class="slide"><a href="https://wrh4585.github.io/bigData02/" target="_blank"><img src="images/echarts1.png"></a></figure>
+				<figure class="slide"><a href="https://wrh4585.github.io/bigData03/" target="_blank"><img src="images/echarts2.png"></a></figure>
+				<figure class="slide"><a href="https://wrh4585.github.io/bigData01/" target="_blank"><img src="images/echarts3.png"></a></figure>
+			</div>
+		</div>
+		<div id="time-indicator"></div>
+	</div>
+</div>
+	
+<script type="text/javascript" src="js/box-slider-all.jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+
+	var $box = $('#box'), $indicators = $('.goto-slide'), $timeIndicator = $('#time-indicator'), slideInterval = 5000;
+
+	var switchIndicator = function ($c, $n, currIndex, nextIndex) {
+		$timeIndicator.stop().css('width', 0);
+		$indicators.removeClass('current').eq(nextIndex).addClass('current');
+	};
+
+	var startTimeIndicator = function () {
+		$timeIndicator.animate({width: '891px'}, slideInterval);
+	};
+
+	// initialize the plugin with the desired settings
+	$box.boxSlider({
+		speed: 1000,
+		autoScroll: true,
+		timeout: slideInterval,
+		next: '#next',
+		prev: '#prev',
+		pause: '#pause',
+		effect: 'scrollVert3d', /*scrollVert3d and scrollHorz3d*/ 
+		blindCount: 15,
+		onbefore: switchIndicator,
+		onafter: startTimeIndicator
+	});
+
+	startTimeIndicator();
+
+	// pagination isn't built in simply because it's easy to
+	// roll your own with the plugin API methods
+	$('#controls').on('click', '.goto-slide', function (ev){
+		$box.boxSlider('showSlide', $(this).data('slideindex'));
+		ev.preventDefault();
+	});
+	
+});
+
+</script>
+
+
+</body>
+</html>

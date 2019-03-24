@@ -1,0 +1,157 @@
+header {
+    height: 2.59em;
+    border-bottom: 1px solid #b2b2b2;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    line-height: 2.59em;
+    background: #fff;
+}
+
+header h3 {
+    font-size: 1em;
+    vertical-align: middle;
+    color: #666;
+    font-weight: 100;
+}
+.top {
+    height: 7.3125em;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top img {
+    height: 3.375em;
+    width: 3.375em;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.top a {
+    color: #999999;
+    font-size: 0.8125em;
+}
+
+.center {
+    margin-top: 0.5em;
+    background: #fff;
+    padding-left: 0.9375em;
+    padding-right: 0.9375em;
+}
+
+.center-t {
+    display: flex;
+    align-items: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.center-t img {
+    height: 0.9375em;
+    width: 0.1875em;
+    display: inline-block;
+    padding-right: 2px;
+    /* padding-bottom:1px; */
+    /* vertical-align: middle; */
+}
+
+.center-t span {
+    font-size: 0.96875em;
+    display: inline-block;
+    color: #666666;
+}
+
+.center-c-s, .center-c-x {
+    height: 7em;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.center-cc img {
+    width: 6.28125em;
+    height: 5em;
+}
+
+.center-ss {
+    padding-left: 0.9375em;
+}
+
+.center-ss h3 {
+    font-size: 1em;
+    padding-bottom: 5px;
+    /* padding-bottom:1px; */
+}
+
+.center-ss p {
+    font-size: 0.78125em;
+    color: #999999;
+    padding-bottom: 5px;
+}
+
+.center-ss span b {
+    color: #28bea0;
+    font-size: 0.625em;
+}
+
+.center-ss span s {
+    font-size: 0.625em;
+    color: #a3a3a3;
+}
+
+.center-sb {
+    padding-top: 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.center-sb a {
+    display: block;
+}
+
+.center-sb img {
+    display: block;
+    width: 100%;
+}
+
+.center-sb div {
+    width: 100%;
+    display: block;
+}
+
+.center-sb div h3 {
+    display: inline-block;
+}
+
+.center-sb span {
+    padding-left: 152px;
+}
+
+.center-sb div h3 {
+    font-size: 1em;
+    padding-bottom: 5px;
+}
+
+.center-sb div span b {
+    color: #28bea0;
+    font-size: 0.625em;
+}
+
+.center-sb div span s {
+    font-size: 0.625em;
+    color: #a3a3a3;
+}
+
+.center-sb p {
+    font-size: 0.78125em;
+    color: #999999;
+    padding-bottom: 5px;
+}
+
+.bottom a:nth-child(2) {
+    color: #209e85;
+}

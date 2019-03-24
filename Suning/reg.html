@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reg.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header"><img id="goback_reg" src="img/log_goback.jpg" alt=""><p>手机快速注册</p></div>
+    <section>
+        <div class="divItem">
+            <p class="divItem_p">手机号码</p>
+            <input class="divItem_input" type="text" placeholder="请输入11位手机号码">
+        </div>
+        <div class="divItem">
+            <p class="divItem_p">手机验证码</p>
+            <input class="divItem_input" type="text" placeholder="请输入手机验证码">
+            <p class="divItem_p yzm">获取验证码</p>
+        </div>
+        <div class="divItem">
+            <p class="divItem_p">设置密码</p>
+            <input class="divItem_input pw_reg" type="text" placeholder="6-20位数字+字母或者符号组成">
+        </div>
+        <div class="submitReg">
+            <input type="button" value="提交注册">
+        </div>
+        <p class="vipReg">企业会员注册</p>
+        
+    </section>
+</body>
+</html>
+<script>
+    //返回上一个页面
+    document.getElementById("goback_reg").onclick = function(){
+        window.history.go(-1);
+    }
+</script>

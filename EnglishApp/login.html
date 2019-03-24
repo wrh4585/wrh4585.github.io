@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="reg-top">
+        <div class="reg-topp">
+            <h2>欢迎来到扇贝</h2>
+            <a href="javascript:;">了解扇贝</a>
+        </div>
+    </div>
+
+    <div class="reg-center">
+        <table>
+            <tr>
+                <td><input type="text" placeholder="手机/邮箱/用户名" class="one" id="one"></td>
+                <td><input type="password" placeholder="密码" class="two"  id="three">
+                </td>
+                <td class="wjmm"><a href="javascript:;">忘记密码？</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="reg-submit">
+        <input type="submit" class="ipt" value="登陆" id="ipt">
+        <!-- <p>*未注册扇贝的手机号,登陆时将自动注册</p> -->
+        <a href="reg.html">快速登陆注册</a>
+    </div>
+    <p class="p">第三方登录</p>
+    <div class="reg-bottom">
+
+        <a href="javascript:;"><img src="img/wx.png" alt="">微信</a>
+        <a href="javascript:;"><img src="img/qq.png" alt="">QQ</a>
+        <a href="javascript:;"><img src="img/wb.png" alt="">微博</a>
+    </div>
+
+    <p class="zuidi">登陆代表您已经同意<a href="javscript:;">
+            <<扇贝用户协议>>
+        </a></p>
+
+</body>
+
+</html>
+<script>
+        function q(id) {
+            return document.getElementById(id);
+        }
+
+        q('ipt').onclick = function () {
+
+            let Xml = new XMLHttpRequest();
+            //对象
+            Xml.open('post', 'php/login.php', true)
+            // Xml.open('post','location.php',true);
+            Xml.onreadystatechange = function () {
+                if (Xml.readyState == 4 && Xml.status == 200) {
+                    let op = Xml.responseText;
+                    if (op == '0') {
+                        alert('登录失败');
+                    } else {
+                        alert('登录成功');
+                        // location.reload('login.html');
+                        location.href='loginup.html';
+                    }
+                }
+            }
+            // post方法
+            Xml.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+            let abstr = "one=" + q('one').value + "&three=" + q('three').value;
+            Xml.send(abstr);
+            // Xml.send();
+
+        }
+</script>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <title>登录</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/log.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <img id="goback_log" src="img/log_goback.jpg">
+        <span>登录</span>
+    </div>
+    <!-- nav -->
+    <div class="nav">
+        <div><span>快捷登录</span></div>
+        <div><span>账号密码登录</span></div>
+        
+    </div>
+    <!-- section -->
+    <div class="section">
+        <!-- 快捷登录 -->
+        <div class="kjLog">
+            <div class="sec_div">
+                <p class="sec_tit">手机号</p>
+                <input class="sec_input" type="text" placeholder="请输入手机号">
+               
+            </div>
+            <div class="sec_div">
+                <p class="sec_tit">手机验证码</p>
+                <input class="sec_input" type="text" placeholder="请输入手机验证码">
+                <p class="sec_tit">获取验证码</p>
+            </div>
+        </div>
+        <!-- 账号密码登录 -->
+        <div class="kjLog passDiv">
+            <div class="sec_div">
+                <p class="sec_tit s_p">账&nbsp;&nbsp;&nbsp;号</p>
+                <input class="sec_input s_inp" type="text" placeholder="手机号/邮箱/用户名">
+                
+            </div>
+            <div class="sec_div s">
+                <p class="sec_tit s_p">密&nbsp;&nbsp;&nbsp;码</p>
+                <input class="sec_input s_inp" type="text" placeholder="请输入6-20位易购密码">
+                <img src="img/eye.jpg" alt="">
+            </div>
+        </div>
+        <!-- 登录按钮 -->
+        <input class="submite" type="button" value="登录">
+        <p class="forgetPw">忘记密码？</p>
+        <div class="speedReg"><p id="goReg">快速注册</p></div> 
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer_t">
+            <div></div>
+            <p>其他登录方式</p>
+            <div></div>
+        </div>
+        <div class="footer_b">
+            <div class="footer_b_con">
+                <a href="##"><img src="img/qq.jpg" alt=""><span>QQ</span></a>
+                <a href="##"><img src="img/yi.jpg" alt=""><span>易付宝</span></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    //返回上一页
+    document.getElementById("goback_log").onclick = function(){
+        window.history.go(-1);
+    }
+   
+
+    
+    //快速注册
+    document.getElementById("goReg").onclick = function(){
+        location.href = "reg.html";
+    }
+
+</script>

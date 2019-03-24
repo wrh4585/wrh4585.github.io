@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+body,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd,p,input,select,textarea,td{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 27.78vw;
+}
+html,body{
+    height: 100%;
+}
+body{
+    font-family:"微软雅黑";
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+a{
+    text-decoration:none;
+}
+ul,ol{
+    list-style:none;
+}
+img{
+    border:0;
+    display: block;
+}
+/*header*/
+header{
+    width: 100%;
+    height: .56rem;
+    background: #ffffff;
+}
+.header-Abox{
+    width: 3.36rem;
+    height: 100%;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    margin-left: .12rem;
+}
+.header-Bbox a{
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+    -webkit-align-items: center;
+    color: #231815;
+    font-size: .11rem;
+    font-weight: 600;
+}
+.header-AboxImg1{
+    width: .32rem;
+    height: .32rem;
+    margin-right: .08rem;
+}
+.header-AboxImg2{
+    width: .2rem;
+    height: .17rem;
+}
+
+/*section*/
+section{
+    width: 100%;
+    height: 1.76rem;
+    background: #ffffff;
+    margin: .08rem 0 .08rem;
+}
+.section-Img{
+    width: 100%;
+    height: 1.36rem;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+}
+.section-ImgBox{
+    width: 1.04rem;
+    height: 1.04rem;
+    background: #fe5c46;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    border-radius: 50%;
+}
+.section-ImgBox a{
+    color: #ffffff;
+    font-size: .45rem;
+}
+.ImgBox-aSpan{
+    font-size: .09rem;
+}
+.ImgBox-aSpanP{
+    font-size: .1rem;
+    text-align: center;
+}
+.section-ImgP{
+    font-size: .11rem;
+    text-align: center;
+    color: #231815;
+}
+
+/*section-02*/
+.section-02{
+    width: 100%;
+    height: .56rem;
+    background: #ffffff;
+    margin: 0 0 .08rem;
+}
+.section-02Tb{
+    display: flex;
+    -webkit-justify-content: flex-start;
+    -webkit-align-items: center;
+    height: 100%;
+    color: #343434;
+    font-size: .16rem;
+    padding-left: .12rem;
+}
+.section-Onespan{
+    width: .17rem;
+    height: .17rem;
+    border-radius: 50%;
+    background: #ff5c46;
+    font-size: .08rem;
+    display: -webkit-flex;
+    color:  #ffffff;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    margin-left: .06rem;
+}
+.section-Twospan{
+    display: flex;
+    color: #969696;
+    font-size: .11rem;
+    margin-left: 1.19rem;
+}
+.section-Twospan img{
+    width: .16rem;
+    height: .17rem;
+    margin-right: .05rem;
+}
+
+/*section-03*/
+.section-03{
+    width: 100%;
+    background: #ffffff;
+}
+.section-03Top{
+    width: 100%;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+}
+.section-03Top a{
+    width: 25%;
+    height: .94rem;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-flex-direction: column;
+}
+.section-03Top a img{
+    width: .29rem;
+    height: .28rem;
+    margin-top: .24rem;
+}
+.section-03Top a span {
+    font-size: .11rem;
+    color: #909090;
+    margin-top: .14rem;
+}
+.section-03Top a p{
+    font-size: .1rem;
+    color: #f3b301;
+}
+.section-03Block a{
+    width: 100%;
+    color: #969696;
+    font-size: .11rem;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: center;
+    padding: .14rem 0;
+}
+.section-03Block img{
+    width: .11rem;
+    height: .07rem;
+}
+
+/*section-04*/
+.section-04{
+    height: .32rem;
+    background: #f5f5f5;
+    color: #969696;
+    font-size: .11rem;
+    display: flex;
+    align-items: center;
+    margin-left: .08rem;
+}
+.section-05{
+    width: 100%;
+    background: #ffffff;
+}
+.flex-1{
+    -webkit-flex: 1;
+    overflow-y: auto;
+}
+/*footer*/
+footer{
+    width: 100%;
+    height: .6rem;
+    background: #ffffff;
+    display:-webkit-flex;
+    box-shadow: 0 0px 1px #909090;
+    z-index: 100;
+}
+footer img{
+    width: .24rem;
+    height: .24rem;
+    margin: 0 auto;
+    margin: .08rem auto .06rem;
+}
+footer a{
+    -webkit-flex:1;
+    width: 20%;
+    text-align: center;
+}
+footer span {
+    display: block;
+    color: #969696;
+    font-size: .09rem;
+}

@@ -1,0 +1,30 @@
+body {
+    padding-bottom: 0;
+    background-color: #ffffff;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #393939;
+    line-height: 1.5;
+}
+ul li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+span{
+    cursor: pointer;
+}
+body{
+    height:100%;
+    width: 100%;
+}
+html{
+    height:100%;
+    width:100%;
+}
+*{
+    margin:0;
+    padding:0;
+}

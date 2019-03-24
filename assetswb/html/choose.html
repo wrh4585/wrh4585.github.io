@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/choose.css">
+</head>
+<body>
+    <!-- 搜索框 -->
+    <nav>
+        <input type="text" placeholder="搜索型号、系列、品牌">
+        <img src="../img/headerB01.jpg" alt="">
+    </nav>
+    <section>
+        <ul class="chooseLeft">
+            <li>
+                <span class="chooseSp">推荐</span>
+                <div class="chooseRight">
+                    <img src="../img/choose01.jpg">
+                    <div class="chooseRightA">
+                        <span></span>
+                        <span>猜你喜欢</span>
+                        <span></span>
+                    </div>
+                    <div class="chooseRightB">
+                        <div class="chooseRightC">
+                            <img src="../img/choose02.jpg" alt="">
+                            <span>机械表</span>
+                        </div>
+                        <div class="chooseRightC">
+                            <img src="../img/choose02.jpg" alt="">
+                            <span>机械表</span>
+                        </div>
+                        <div class="chooseRightC">
+                            <img src="../img/choose02.jpg" alt="">
+                            <span>机械表</span>
+                        </div>
+                        <div class="chooseRightC">
+                            <img src="../img/choose02.jpg" alt="">
+                            <span>机械表</span>
+                        </div>
+                        <div class="chooseRightC">
+                            <img src="../img/choose02.jpg" alt="">
+                            <span>机械表</span>
+                        </div>
+                        <div class="chooseRightC">
+                            <img src="../img/choose02.jpg" alt="">
+                            <span>机械表</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <span class="chooseSp">顶级品牌</span>
+                <div class="chooseRight">222</div>
+            </li>
+            <li>
+                <span class="chooseSp">奢华品牌</span>
+                <div class="chooseRight">333</div>
+            </li>
+            <li>
+                <span class="chooseSp">高级品牌</span>
+                <div class="chooseRight">444</div>
+            </li>
+            <li>
+                <span class="chooseSp">轻奢时尚</span>
+                <div class="chooseRight">555</div>
+            </li>
+            <li>
+                <span class="chooseSp">年轻潮牌</span>
+                <div class="chooseRight">666</div>
+            </li>
+            <li>
+                <span class="chooseSp">国产智能</span>
+                <div class="chooseRight">777</div>
+            </li>
+            <li>
+                <span class="chooseSp">表带</span>
+                <div class="chooseRight">888</div>
+            </li>
+            <li>
+                <span class="chooseSp">维修保养</span>
+                <div class="chooseRight">999</div>
+            </li>
+            <li>
+                <span class="chooseSp">二手商城</span>
+                <div class="chooseRight">aaa</div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 底部 -->
+    <footer>
+        <div class="footer">
+            <a href="index.html"><img src="../img/footer01.jpg" alt=""></a>
+            <span>首页</span>
+        </div>
+        <div class="footer">
+            <a href="magazine.html"><img src="../img/footer02.jpg" alt=""></a>
+            <span>杂志</span>
+        </div>
+        <div class="footer">
+            <a href="choose.html"><img src="../img/footer03.jpg" alt=""></a>
+            <span>选表</span>
+        </div>
+        <div class="footer">
+            <a href="car.html"><img src="../img/footer04.jpg" alt=""></a>
+            <span>购物袋</span>
+        </div>
+        <div class="footer">
+            <a href="my.html"><img src="../img/footer05.jpg" alt=""></a>
+            <span>我的</span>
+        </div>
+    </footer>
+<script src="../js/tools.js"></script>
+</body>
+</html>
+<script>
+function show(){
+    var chs = t(".chooseSp");
+    var divs = t(".chooseRight");
+    for (var i = 0; i < chs.length; i++) {
+        chs[i].index = i;
+        chs[i].onclick = function () {
+            for (var j = 0; j < divs.length; j++) {
+                divs[j].style.display = "none";
+            }
+            divs[this.index].style.display = "block";
+        }
+    }
+}
+
+window.onload=function(){
+    show();
+}
+</script>

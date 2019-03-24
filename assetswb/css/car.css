@@ -1,0 +1,196 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,textarea,figure{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"微软雅黑",Arial;
+    display:-webkit-flex;
+    -webkit-flex-direction:column;
+}
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+}
+img{
+    display: block;
+    border:none;
+}
+
+html,body{
+    height:100%;
+}
+html{
+    font-size:26.67vw;
+}
+
+/* 头部 */
+header{
+  height:.45rem;
+  border-bottom:1px solid #e3e2da;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header span:nth-of-type(1){
+  font-size:.13rem;
+  display: block;
+  margin-left:40%;
+}
+header span:nth-of-type(2){
+  font-size:.12rem;
+  display: block;
+  margin-right:9px;
+}
+/* 内容 */
+section{
+    background: #f1f1f1;
+    padding-top: .39rem;
+}
+.sectionA input{
+    display:block;
+}
+.sectionA{
+    display: flex;
+    justify-content: space-between;
+    width:1.72rem;
+}
+.section input{
+    display: block;
+    margin-left:.18rem;
+    margin-top:3px;
+}
+.section span{
+    font-size:.13rem;
+    display: block;
+}
+.sectionB{
+    font-size:.11rem;
+    color:#d52b2b;
+    display: block;
+    margin-right:.17rem;
+}
+.sectionC{
+    display: flex;
+    justify-content: space-between;
+    height:.38rem;
+    align-items: center;
+    background: #fff;
+    border-bottom:1px solid #eee;
+}
+.carList{
+    display: flex;
+    height:1.21rem;
+    align-items: center;
+    background: #fff;
+}
+.carList img{
+    margin-left:.16rem;
+    margin-right:.1rem;
+    display: block;
+    width:.95rem;
+    height:.95rem;
+}
+.carListA span:nth-of-type(1){
+    font-size:.1rem;
+    display: block;
+    margin-bottom:6px;
+}
+.carListA span:nth-of-type(2){
+    font-size:7px;
+    color:#959595;
+    display: block;
+    margin-bottom:.13rem;
+}
+.carListA span:nth-of-type(3){
+    font-size:7px;
+    color:#959595;
+    display: block;
+    margin-left:1.18rem;
+}
+.carListA p{
+    display: flex;
+}
+.carListB{
+    font-size:.1rem;
+    display: block;
+}
+.carListC{
+    font-size:8px;
+    color:#959595;
+}
+
+/* 结算 */
+.total{
+    display: flex;
+    height:.45rem;
+    align-items: center;
+    position: fixed;
+    bottom:.48rem;
+    border-top:1px solid #dcdcdc;
+    width:100%;
+    justify-content: space-between;
+    background: #fff;
+}
+.totalLeft{
+    display: flex;
+    margin-left:.15rem;
+}
+.totalLeft span{
+    font-size:.11rem;
+    margin-left:8px;
+}
+.totalRight{
+    display: flex;
+    align-items: center;
+}
+.totalRightA span:nth-of-type(1){
+    font-size:.11rem;
+    display: block;
+}
+.totalRightA span:nth-of-type(2){
+    font-size:8px;
+    display: block;
+    color:#9c9c9c;
+}
+.totalRightB span {
+    display: block;
+    width:.84rem;
+    height:.45rem;
+    background: #cccccc;
+    color:#fff;
+    font-size:.11rem;
+    text-align: center;
+    line-height: .45rem;
+    margin-left:9px;
+}
+
+/* 底部 */
+footer{
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+.footer{
+    width:.4rem;
+    text-align: center;
+}
+.footer span{
+    display: block;
+    font-size:.08rem;
+}
+.footer img{
+    margin:0 auto;
+    display: block;
+    width:.24rem;
+    height:.21rem;
+    margin-top:6px;
+    margin-bottom:5px;
+}
+.box{
+    flex: 1;
+    overflow-y: auto;
+}

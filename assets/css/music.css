@@ -1,0 +1,310 @@
+@charset "utf-8";
+/*css document*/
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size: 26.67vw;
+}
+html,body{
+	height: 100%;
+}
+body{
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+ }
+ul,ol{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:none;
+	display: block;
+}
+/* header */
+header{
+    width: 100%;
+    /* height: 1.42rem; */
+    background-color: #e2443a;
+}
+.headBox{
+    display: flex;
+    justify-content: space-around;
+    height: .36rem;
+    padding: .2rem 0;
+}
+.headBox .iconfont{
+    font-size: .3rem;
+    color: #fff;
+    /* background-color: #e2443a; */
+    display: block;
+}
+.headList{
+    display: flex;
+    justify-content: space-around;
+    width: 1.82rem;
+}
+/* infoBox */
+.infotmation{
+    width: 100%;
+    /* position: absolute; */
+    /* top: 12%; */
+}
+.infoBox{
+    width: 3.63rem;
+    height: 1.1rem;
+    margin: 0 auto;
+    background-color:#fdf0ef;
+    box-shadow: 0px 2px 4px 4px #f2f2f2;
+    border-radius: .06rem;
+}
+.infoIner{
+    width: 3.38rem;
+    margin: 0 auto;
+}
+.infoTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .7rem;
+}
+.infoName{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 100%; */
+    line-height: .7rem;
+}
+.infoName span{
+    display: block;
+    /* float: left; */
+}
+.infoName img{
+    width: .47rem;
+    height: .47rem;
+    border-radius: 50%;
+    margin-right: .1rem;
+    /* float: left; */
+}
+.littleNew{
+    font-size:.16rem ;
+    color: #252222;
+    display: block;
+}
+.buyVip{
+    font-size: 12px;
+    color: #d43c33;
+    width: .78rem;
+    height: .24rem;
+    border: 1px solid #d43c33;
+    border-radius: .12rem;
+    text-align: center;
+    line-height:.24rem;
+}
+.infoBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .38rem;
+    border-top: 1px solid #f5eceb;
+}
+.benefits{
+    font-size: 10px;
+    color: #cf2a20;
+    width: .27rem;
+    height: .15rem;
+    line-height: .15rem;
+    text-align: center;
+    border: 1px solid #cf2a20;
+    float: left;
+    margin-right: .05rem;
+}
+.blackVip{
+    font-size: .14rem;
+    color: #787676;
+    display: block;
+    float: left;
+    /* color: #000000; */
+}
+.infoLook{
+    font-size: .14rem;
+    color: #787676;
+    display: block;
+}
+.icon-erjiyemianjiantou01{
+    font-size: 12px;
+    color: #787676;
+}
+/* slideBox */
+/* 中间滚动圣杯布局 */
+.slideBox{
+    flex: 1;
+    overflow-y: auto;
+}
+/* section */
+/* 播放器首页列表 */
+section{
+    width: 3.63rem;
+    margin: 0 auto;
+}
+.localList{
+    /* margin-top: .75rem; */
+}
+.localList li .iconfont{
+    font-size: .21rem;
+    color: #c60000;
+    padding: 0 .1rem;
+}
+.localList li{
+    height: .51rem;
+    border-bottom:1px solid #f5f5f5;
+    display: flex;
+    align-items: center;
+}
+.loaclMusic{
+    font-size: .16rem;
+    color: #1b1b1b;
+}
+.localNum{
+    font-size: .12rem;
+    color: #898989;
+}
+/* createList */
+/* 播放器收藏列表管理 */
+.createList{
+    width: 100%;
+}
+.createInfo{
+    display: flex;
+    justify-content: space-between;
+    height: .31rem;
+    /* width: 3.63rem; */
+    margin:  0 auto;
+    background-color: #f3f3f3;
+    width: 100%;
+}
+.createInfo p{
+    line-height: .31rem;
+    margin-right: .1rem;
+}
+.createInfo p span{
+    display: block;
+}
+.createSong{
+    font-size: .13rem;
+    color: #646464;
+}
+.createLeft{
+    display: flex;
+    align-items: center;
+}
+.createLeft :first-child{
+    margin: 0 .1rem 0 .1rem;
+}
+/* createMusicList */
+/* 创建的歌单，点击显示 */
+.createMusicList{
+    width: 3.63rem;
+    margin:  0 auto;y
+}
+.loveSong{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: .1rem 0;
+    border-bottom: 1px solid #f5f5f5;
+}
+.loveSongLeft{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.loveSongLeft img{
+    width: .56rem;
+    height: .56rem;
+    border-radius: .02rem;
+    margin-right: .1rem;
+}
+.myLoveSong{
+    font-size: .18rem;
+    color: #1a1a1a;
+    display: block;
+}
+.loveActive{
+    font-size: 12px;
+    color: #8e8e8e;
+    display: block;
+}
+.moveHeart{
+    font-size: .13rem;
+    color: #d9554d;
+}
+.moveHeart{
+    width: 1rem;
+    height: .25rem;
+    border: 1px solid #d9554d;
+    text-align: center;
+    line-height: .25rem;
+    border-radius: .12rem;
+}
+.loveSongList{
+    display: flex;
+    flex-direction: column;
+}
+.showMore{
+    height: .2rem;
+}
+.showMore span{
+    display: block;
+    margin-right: .05rem;
+}
+/* footer */
+/* 播放栏 */
+/* footer{
+    width: 100%;
+    height: .5rem;
+    background-color: #fff;
+    
+}
+.mediaInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 3.63rem;
+    margin: 0 auto;
+}
+.singerInfo{
+    display: flex;
+    align-items: center;
+}
+.singerInfo p{
+    width: 2.3rem;
+    overflow: hidden;
+    margin: 0 .1rem;
+}
+.singerInfo img{
+    width: .4rem;
+    height: .4rem;
+}
+.singName{
+    font-size: .14rem;
+    color: #3a3a3a;
+    display: block;
+}
+.singerName{
+    font-size: .12rem;
+    color: #626262;
+    display: block;
+}
+.playInfo{
+    display: flex;
+}
+.playInfo .iconfont{
+    display: block;
+    width: .27rem;
+    height: .27rem;
+    color: #000000;
+} */

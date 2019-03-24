@@ -1,0 +1,130 @@
+body,h1,h2,h3,h4,h5,h6,ol,ul,dl,dd,p,input,select,textarea,td{
+	margin:0;
+	padding:0;
+}
+html{
+	font-size: 26.67vw;
+}
+html,body{
+	height: 100%;
+}
+body{
+    font-family:"微软雅黑";
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:0;
+	display: block;
+}
+/* header */
+header{
+    width:100%;
+    height:.36rem;
+    padding-top: .08rem;
+    border-bottom: 1px solid #ededed;
+}
+.head{
+    width:3.45rem;
+    height:.29rem;
+    background:#ededed;
+    margin:0 auto;
+    border-radius: .04rem;
+    display: -webkit-flex;
+    align-items: center;
+}
+.head img{
+    width:.16rem;
+    height:.16rem;
+    margin-left: .81rem;
+}
+.head p{
+    font-size:.14rem;
+    color:#666;
+    margin-left:.06rem;
+}
+/* section */
+section{
+    width:100%;
+    display: -webkit-flex;
+    -webkit-flex:1;
+	overflow-y: auto; 
+}
+.list_text{
+    width:.81rem;
+    padding:.2rem 0 .2rem 0;
+}
+.list_text li{
+    width:.81rem;
+    text-align: center;
+    font-size: .16rem;
+    line-height: .25rem;
+    margin-top: .15rem;
+}
+.list_text li:first-child{
+    border-left: 3px solid #ab2b2b;
+    color:#ab2b2b;
+}
+.list_text li:hover{
+    border-left: 3px solid #ab2b2b;
+    color:#ab2b2b;
+}
+.list_text li:first-child{
+    margin-top: 0rem;
+}
+.list_mess{
+    width:2.64rem;
+    /* background:#999; */
+    padding: .15rem;
+}
+.list_img img{
+    width:2.64rem;
+}
+.list_clas{
+    width:100%; 
+    display:-webkit-flex;
+    -webkit-flex-wrap:wrap;
+}
+.list_box{
+    width:33.3%;
+    height:.78rem;
+    margin-top: .27rem;
+}
+.list_box img{
+    width:.5rem;
+    /* margin-left: .1rem; */
+    margin:0 auto;
+}
+.list_box p{
+    font-size: .14rem;
+    text-align: center;
+}
+/* footer */
+footer{
+	width:100%;
+    height:.54rem;
+    background: #fff;
+    border-top:1px solid #d9d9d9;
+	display:-webkit-flex;
+	-webkit-align-items:center;
+}
+footer a{
+	-webkit-flex:1;
+	text-align: center;
+}
+footer a img{
+	width:.2rem;
+	height:.2rem;
+	margin:0 auto .06rem;
+}
+footer a span{
+	font-size: .12rem;
+	color:#9f9f9f;
+	display:block;
+}

@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>组件库</title>
+</head>
+
+<style type="text/css">
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
+	body {
+		background: -webkit-linear-gradient(left, white 10%, #bdecff 50%, white 85%);
+	}
+
+	.headv {
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 89px;
+		z-index: 10;
+		width: 100%;
+		display: -webkit-flex;
+		align-items: center;
+		justify-content: flex-end;
+		/*background-color: white;*/
+		padding-bottom:15px;
+		background: -webkit-linear-gradient(left, white 10%, #bdecff 50%, white 85%);
+		/*background-image: url("./img/bjbjbj.png");*/
+		/*background-size: 100% 100%;*/
+	}
+
+	.headv>div {
+		padding: 34px;
+		cursor: pointer;
+		font-size: 22px;
+		color: rgb(0, 195, 255);
+	}
+
+	.headv div:last-child {
+		margin-right: 200px;
+	}
+
+	.headv-check {
+		/*border-top: 1px solid rgb(0, 195, 255);*/
+		transition: all .2s;
+		border-bottom: 2px solid rgb(0, 195, 255);
+		/*color: 1px solid rgb(0, 195, 255);*/
+	}
+
+	.x12 img {
+		height: 100%;
+		float: left;
+	}
+
+	.nav1 {
+		display: flex;
+	}
+
+	.navl {
+		width: 15%;
+		z-index: 200;
+		margin-top: 100px;
+	}
+
+	.navr {
+		flex: 1;
+	}
+
+	.navl div {
+		height: 50px;
+		border-bottom: 3px solid rgb(0, 195, 255);
+		/*border-left:1px solid rgb(0, 195, 255);*/
+		/*border-right:1px solid rgb(0, 195, 255);*/
+		text-align: center;
+		line-height: 40px;
+		font-size: 18px;
+		margin-left: 5px;
+	}
+	
+	.navr div {
+		display: none;
+	}
+
+	.navr .navr1 {
+		display: block;
+	}
+
+	.zhanwei {
+		width: 100%;
+		height: 200px;
+	}
+
+	#slider-box {
+		width: 300px;
+		height: 50px;
+		border-radius: 4px;
+		background: #ccc;
+		margin: 250px auto;
+		position: relative;
+	}
+
+	#slider {
+		width: 48px;
+		height: 48px;
+		border: 1px solid #eee;
+		text-align: center;
+		line-height: 48px;
+		display: inline-block;
+		background: #fff;
+		border-radius: 4px;
+		cursor: move;
+		position: absolute;
+		left: 0;
+		z-index: 5;
+	}
+
+	#slider-text {
+		text-align: center;
+		line-height: 50px;
+		display: inline-block;
+		width: 100%;
+		height: 50px;
+		font-family: "微软雅黑";
+		position: absolute;
+		left: 0;
+		z-index: 4;
+	}
+
+	#slider-bg {
+		width: 0;
+		height: 48px;
+		background: green;
+		position: absolute;
+		z-index: 3;
+		border-radius: 4px;
+	}
+
+	#slider-Emerge {
+		width: 100px;
+		height: 50px;
+		position: absolute;
+	}
+
+	#stop-go {
+		width: 48px;
+		height: 48px;
+		border: 1px solid #eee;
+		background: #36F;
+		position: absolute;
+		right: -1px;
+		display: none;
+		text-align: center;
+		line-height: 48px;
+		color: #fff;
+		font-family: "微软雅黑";
+		border-radius: 4px;
+		z-index: 5;
+	}
+
+	div {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
+	.slider {
+		height: 667px;
+		width: 375px;
+		position: relative;
+	}
+
+	.slider img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+	}
+
+	.slider #slider-box {
+		margin: 0;
+		width: 286px;
+		height: 50px;
+		position: absolute;
+		left: 44px;
+		top: 529px;
+	}
+
+	#kebib {
+		width: 286px;
+		height: 485px;
+		position: absolute;
+		left: 44px;
+		top: 94px;
+	}
+
+	.abcc {
+		width: 500px;
+		height: 300px;
+		background: gray;
+		color: white;
+		overflow-x: hidden;
+
+		
+	}
+
+	.daima {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	#zujian{
+		display:flex;
+		justify-content: space-between;
+	}
+	h4{
+		font-size:20px;
+		color: rgb(0, 195, 255);
+		font-weight: 100;
+		line-height: 48px;
+	}
+	#zuul ,#zuul li{
+		width:184px;
+	}
+	#zuul li{
+		height:50px;
+		font-size:18px;
+		line-height: 53px;
+		text-align: center;
+		border-bottom:3px solid rgb(0, 195, 255);
+	}
+	#zuul li:first-child{
+		border-bottom:3px solid gray;
+	}
+	@-webkit-keyframes rotation{
+		from {-webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(360deg);}
+		}
+
+		.imga{
+		-webkit-transform: rotate(360deg);
+		animation: rotation 3s linear infinite;
+		-moz-animation: rotation 3s linear infinite;
+		-webkit-animation: rotation 3s linear infinite;
+		-o-animation: rotation 3s linear infinite;
+		}
+</style>
+<link rel="stylesheet" href="./css/iconfont.css">
+<link rel="stylesheet" href="./css/st-ui.css">
+
+<body>
+<a href="../index.html"><img src="img/logo.png" alt="" class='imga'></a>
+	<div class="x12 headv">
+		<div>开发指南</div>
+		<div>组件库</div>
+		<div>关于我们</div>
+	</div>
+	<div class="zhanwei"></div>
+	<div class="x12 nav-list">
+		<div class="nav1 x12" style="height: 800px;">
+			<div class='navl'>
+				<div class='znd' index='0' style='border-bottom:3px solid gray;'><span
+						class="iconfont icon-jieshao"></span>&nbsp;&nbsp;介绍&nbsp;&nbsp;&nbsp;&nbsp;</div>
+				<div class='znd' index='1'><span class="iconfont icon-kuaisushangshou"></span>&nbsp;快速上手</div>
+				<div class='znd' index='2'><span class="iconfont icon-nav"></span>&nbsp;风格指南</div>
+			</div>
+			<div class='navr'>
+				<div class='navr1'>
+					<h1>Team-Ui</h1>
+					<h2>基于vue的轻量化组件库，简单、强大、易上手！</h2>
+					<div>
+						<p>特性:</p>
+						<ul id='texing'>
+							<li><b>质量可靠</b><span>便于应用、修改以及下载组件。</span></li>
+							<li><b>体验较佳</b><span>迅速响应，动画比较流畅。</span></li>
+							<li><b>实例清晰</b><span>逻辑清楚，代码完善。</span></li>
+							<li><b>扩展性较强</b><span>轻量灵活，扩展性强，便于二次开发</span></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<h1>Team-Ui</h1>
+					<h2>基于vue的轻量化组件库，简单、强大、易上手！</h2>
+					<div class='jieshao'>
+						<p>使用:</p>
+						<ul>
+							<li><b>易于上手</b><span>轻量化，随时使用，随时安装</span></li>
+							<li><b>灵活简单</b><span>适用于各种场景，代码灵活简单</span></li>
+							<li><b>修改简单</b><span>逻辑清楚，代码完善，你都不需要三分钟来修改代码！</span></li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<h1>Team-Ui</h1>
+					<h2>基于vue的轻量化组件库，简单、强大、易上手！</h2>
+					<div class='jieshao'>
+						<p>风格:</p>
+						<ul>
+							<li><b>极简的风格</b><span>结构简单，明晰，一目了然</span></li>
+							<li><b>应用简单</b><span>基于vue,几乎不需要学习时间，直接使用！</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav2 x12" id='zujian'
+			style="background:-webkit-linear-gradient(left, white 10%, #bdecff 50%,white 85%);height: 800px;padding-top:150px;">
+			<ul id='zuul'>
+				<li>滑动解锁</li>
+				<li>Switch 开关(待开发)</li>
+				<li>五星评分(待开发)</li>
+				<li>淘宝放大镜(待开发)</li>
+				<li>进度条(待开发)</li>
+				<li>下拉菜单(待开发)</li>
+				<li>Tabs 标签页(待开发)</li>
+				<li>Loading 加载(待开发)</li>
+			</ul>
+			<div class='daima'>
+				<h4>滑动解锁组件</h4>
+				<p>功能:实现解锁功能</p>
+				<h4>使用指南</h4>
+				<p>import steamUi from steamUi</p>
+				<p>Vue.use(steamUi)</p>
+				<p>&ltmove-btn&gt&lt/move-btn&gt</p>
+				<h4>示例代码</h4>
+				<pre class='abcc'>
+							&lttemplate&gt
+							&ltdiv class="slider"&gt
+								&ltimg src="aui-iphone.png" alt&gt
+								&ltdiv id="slider-box"&gt
+								&ltspan id="slider"&gt＞&lt/span&gt
+								&ltspan id="slider-text"&gt滑动解锁&lt/span&gt
+								&ltspan id="slider-bg"&gt&lt/span&gt
+								&ltspan id="slider-Emerge"&gt&lt/span&gt
+								&ltspan id="stop-go"&gt∨&lt/span&gt
+								&lt/div&gt
+							&lt/div&gt
+							&lt/template&gt
+							&ltscript&gt
+							export default {
+							name:'moveBtn',
+							components:{
+								moveBtn,
+							}
+							mounted() {
+								var sliderel = {
+									$: function(selector) {
+									return document.getElementById(selector);
+									},
+									getEvent: function(e) {
+									var e = e || window.event;
+									return e;
+									},
+									stopBubble: function(e) {
+									var e = this.getEvent(e);
+									if (typeof e.preventDefault != "undefined") {
+										e.preventDefault();
+									} else {
+										e.returnValue = false;
+									}
+									}
+								},
+								Elemt = {
+									flag: false,
+									nowMoseX: 0,
+									mx: sliderel.$("slider-box"),
+									sd: sliderel.$("slider"),
+									st: sliderel.$("slider-text"),
+									sb: sliderel.$("slider-bg"),
+									se: sliderel.$("slider-Emerge"),
+									sg: sliderel.$("stop-go")
+								};
+								Elemt.sd.onmousedown = function(e) {
+								var e = sliderel.getEvent(e);
+								sliderel.stopBubble(e);
+								Elemt.flag = true;
+								nowMoseX = e.clientX - Elemt.sd.offsetLeft;
+								};
+								//滑块最大移动的距离
+								maxMove = Elemt.mx.offsetWidth - Elemt.sd.offsetWidth;
+								//鼠标移动的时候是否成功
+								Elemt.mx.onmousemove = function(e) {
+								var e = sliderel.getEvent(e);
+								if (Elemt.flag) {
+									var moveX = e.clientX - nowMoseX;
+									var oElemLeft = Elemt.sd.offsetLeft; //判断滑块移动的范围
+									if (oElemLeft &lt 0) {
+									//判断滑块是否超出限制位置
+									moveX = 0;
+									Elemt.flag = false;
+									} else if (oElemLeft &gt maxMove) {
+									moveX = maxMove;
+									Elemt.sg.style.display = "block";
+									Elemt.sd.style.display = "none";
+									Elemt.sb.style.width = 300 + "px";
+									Elemt.st.innerHTML = "滑动成功";
+									Elemt.st.style.color = "#fff";
+									}
+								}
+								Elemt.sd.style.left = moveX + "px";
+								Elemt.sb.style.width = oElemLeft + 20 + "px";
+								};
+								//当鼠抬起判断是否滑动成功
+								Elemt.mx.onmouseup = function(e) {
+								var e = sliderel.getEvent(e);
+								Elemt.flag = false;
+								if (Elemt.sd.offsetLeft &lt maxMove) {
+									speed = Math.ceil(Elemt.sd.offsetLeft / 40);
+									time = setInterval(function() {
+									if (Elemt.sd.offsetLeft &gt= 0) {
+										Elemt.sd.style.left = Elemt.sd.offsetLeft - speed + "px";
+										Elemt.sb.style.width = Elemt.sb.offsetWidth - speed + "px";
+									} else {
+										clearInterval(time);
+										return false;
+									}
+									}, 10);
+								}
+								};
+								//当鼠离开是否滑动成功
+								Elemt.sd.onmouseout = function(e) {
+								sliderel.stopBubble(e);
+								Elemt.flag = false;
+								if (Elemt.sd.offsetLeft &lt maxMove) {
+									speed = Math.ceil(Elemt.sd.offsetLeft / 40);
+									time = setInterval(function() {
+									if (Elemt.sd.offsetLeft &gt= 0) {
+										Elemt.sd.style.left = Elemt.sd.offsetLeft - speed + "px";
+										Elemt.sb.style.width = Elemt.sb.offsetWidth - speed + "px";
+									} else {
+										clearInterval(time);
+										return false;
+									}
+									}, 10);
+								}
+								};
+							}
+							};
+							&lt/script&gt
+							
+							&ltstyle scoped&gt
+							#slider-box {
+							width: 300px;
+							height: 50px;
+							border-radius: 4px;
+							background: #ccc;
+							margin: 250px auto;
+							position: relative;
+							}
+							#slider {
+							width: 48px;
+							height: 48px;
+							border: 1px solid #eee;
+							text-align: center;
+							line-height: 48px;
+							display: inline-block;
+							background: #fff;
+							border-radius: 4px;
+							cursor: move;
+							position: absolute;
+							left: 0;
+							z-index: 5;
+							}
+							#slider-text {
+							text-align: center;
+							line-height: 50px;
+							display: inline-block;
+							width: 100%;
+							height: 50px;
+							font-family: "微软雅黑";
+							position: absolute;
+							left: 0;
+							z-index: 4;
+							}
+							#slider-bg {
+							width: 0;
+							height: 48px;
+							background: green;
+							position: absolute;
+							z-index: 3;
+							border-radius: 4px;
+							}
+							#slider-Emerge {
+							width: 100px;
+							height: 50px;
+							position: absolute;
+							}
+							#stop-go {
+							width: 48px;
+							height: 48px;
+							border: 1px solid #eee;
+							background: #36f;
+							position: absolute;
+							right: -1px;
+							display: none;
+							text-align: center;
+							line-height: 48px;
+							color: #fff;
+							font-family: "微软雅黑";
+							border-radius: 4px;
+							z-index: 5;
+							}
+							div {
+							-moz-user-select: none;
+							-webkit-user-select: none;
+							user-select: none;
+							}
+							.slider {
+							height: 667px;
+							width: 375px;
+							position: relative;
+							right: -100%;
+							margin-left: -375px;
+							}
+							.slider img {
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							left: 0;
+							top: 0;
+							}
+							.slider #slider-box {
+							margin: 0;
+							width: 286px;
+							height: 50px;
+							position: absolute;
+							left: 44px;
+							top: 529px;
+							}
+							&lt/style&gt
+								
+					</pre>
+			</div>
+			<div class='slider'>
+				<img src="u=3414891042,2239909818&fm=26&gp=0.jpg" alt="" id='kebib'>
+				<img src="aui-iphone.png" alt="">
+				<div id="slider-box">
+					<span id="slider">＞</span>
+					<span id="slider-text">滑动解锁</span>
+					<span id="slider-bg"></span>
+					<span id="slider-Emerge"></span>
+					<span id="stop-go">∨</span>
+				</div>
+			</div>
+		</div>
+		<div class="nav3 x12"
+			style="background:-webkit-linear-gradient(left, white 10%, #bdecff 50%,white 85%);;height: 800px;padding-top:80px;">
+			<div class="aboutUs">
+				<img src="img/logo.png" alt="" class='imgU'>
+				<div class="forUs">
+					<h1>About Team-Ui</h1>
+					<p>热爱前端，使我们相遇。</p>
+					<p>正如LOGO一般，Simple and powerful——生活中每个人都是平凡简单的，但是机缘巧合下，凑在一起，互相学习，互相勉励，每个人力量都在团队中放大，充满能量！</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/hScroll.js"></script>
+	<script type="text/javascript">
+		//初始化
+		new hScroll({
+			nav1: '.headv>div', //导航对应的元素
+			nav2: '.nav-list>div', //监听的元素
+			checkClass: 'headv-check' //选中的样式
+		});
+		var zhinan = document.querySelector('.navl')
+		var navrd = document.querySelector('.navr').children
+		function clear() {
+			for (var i = 0; i < navrd.length; i++) {
+				navrd[i].style.display = 'none'
+				zhinan.children[i].style.borderColor = 'rgb(0, 195, 255)'
+			}
+		}
+		zhinan.onclick = function (event) {
+			var evt = event || window.event
+			if (evt.target.className.toLowerCase() == 'znd') {
+				clear()
+				evt.target.style.borderColor = 'gray'
+				var index = evt.target.getAttribute('index')
+				navrd[index].style.display = 'block'
+
+			}
+		}
+
+
+
+		var sliderel = {
+			$: function (selector) {
+				return document.getElementById(selector)
+			},
+			getEvent: function (e) {
+				var e = e || window.event
+				return e;
+			},
+			stopBubble: function (e) {
+				var e = this.getEvent(e)
+				if (typeof e.preventDefault != "undefined") {
+					e.preventDefault();
+				} else {
+					e.returnValue = false;
+				}
+			}
+		},
+			Elemt = {
+				flag: false,
+				nowMoseX: 0,
+				mx: sliderel.$("slider-box"),
+				sd: sliderel.$("slider"),
+				st: sliderel.$("slider-text"),
+				sb: sliderel.$("slider-bg"),
+				se: sliderel.$("slider-Emerge"),
+				sg: sliderel.$("stop-go"),
+			}
+		Elemt.sd.onmousedown = function (e) {
+			var e = sliderel.getEvent(e)
+			sliderel.stopBubble(e);
+			Elemt.flag = true
+			nowMoseX = e.clientX - Elemt.sd.offsetLeft;
+		}
+		//滑块最大移动的距离
+		maxMove = Elemt.mx.offsetWidth - Elemt.sd.offsetWidth;
+		//鼠标移动的时候是否成功
+		Elemt.mx.onmousemove = function (e) {
+			var e = sliderel.getEvent(e)
+			if (Elemt.flag) {
+				var moveX = e.clientX - nowMoseX;
+				var oElemLeft = Elemt.sd.offsetLeft;//判断滑块移动的范围 
+				if (oElemLeft < 0) { //判断滑块是否超出限制位置
+					moveX = 0;
+					Elemt.flag = false
+				} else if (oElemLeft > maxMove) {
+					moveX = maxMove;
+					Elemt.sg.style.display = "block";
+					Elemt.sd.style.display = "none"
+					Elemt.sb.style.width = 300 + "px"
+					Elemt.st.innerHTML = "解锁成功"
+					Elemt.st.style.color = "#fff"
+				}
+			}
+			Elemt.sd.style.left = moveX + "px"
+			Elemt.sb.style.width = oElemLeft + 20 + "px";
+		}
+		//当鼠抬起判断是否滑动成功
+		Elemt.mx.onmouseup = function (e) {
+			var e = sliderel.getEvent(e)
+			Elemt.flag = false
+			if (Elemt.sd.offsetLeft < maxMove) {
+				speed = Math.ceil(Elemt.sd.offsetLeft / 40);
+				time = setInterval(function () {
+					if (Elemt.sd.offsetLeft >= 0) {
+						Elemt.sd.style.left = Elemt.sd.offsetLeft - speed + "px";
+						Elemt.sb.style.width = Elemt.sb.offsetWidth - speed + "px";
+					} else {
+						clearInterval(time);
+						return false;
+					}
+				}, 10)
+			}
+		}
+		//当鼠离开是否滑动成功
+		Elemt.sd.onmouseout = function (e) {
+			sliderel.stopBubble(e);
+			Elemt.flag = false;
+			if (Elemt.sd.offsetLeft < maxMove) {
+				speed = Math.ceil(Elemt.sd.offsetLeft / 40);
+				time = setInterval(function () {
+					if (Elemt.sd.offsetLeft >= 0) {
+						Elemt.sd.style.left = Elemt.sd.offsetLeft - speed + "px";
+						Elemt.sb.style.width = Elemt.sb.offsetWidth - speed + "px";
+					} else {
+						clearInterval(time);
+						return false;
+					}
+				}, 10);
+			}
+		}
+			$(".abcc").scrollLeft(350);
+	</script>
+</body>
+
+</html>

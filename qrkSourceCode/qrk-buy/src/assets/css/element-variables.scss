@@ -1,0 +1,10 @@
+/*改变主颜色变量*/
+$--color-primary: #2d65ff;
+/* 自定义主体颜色变量，修改我们自己写的代码*/
+.primaryColor{
+  background-color: #ff6fdd;
+}
+/*改变icon 字体路径变量，必需*/
+$--font-path:'~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";

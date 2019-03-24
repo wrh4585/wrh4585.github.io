@@ -1,0 +1,86 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,td,input,select,option,textarea{
+    margin:0;
+    padding:0;
+}
+html{
+    font-size: 26.67vw;
+}
+html,body{
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+body{
+    position: relative;
+    font-family:"微软雅黑";
+    background:-webkit-linear-gradient(left, white 10%, #bdecff 50%, white 85%);
+}
+ul,ol{
+    list-style:none;
+}
+a{
+    text-decoration:none;
+}
+img{
+    border:none;
+    display: block;
+}
+.boss{
+    height:100%;
+}
+.boss h1{
+    font-size: 30px;
+}
+
+#options{
+    top: 31px;
+    left: 69.2%;
+    position: fixed;
+}
+#options ul{
+    display: flex;
+    font-size: 20px;
+}
+#options ul li{
+    width: 98px;
+    height: 48px;
+    outline: none;
+    line-height: 48px;
+    border: 1px solid;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 10px;
+    display: inline-block;
+    text-decoration: none;
+    transform: translate(0);
+    transition: color .2s,transform .2s;
+}
+#options a{
+    color: #4062bb;
+    font-weight: 600;
+}
+#options a:hover{
+    color: #b1f2ee;
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.one{
+    width: 60%;
+    margin: 240px auto 0;
+}
+.one h1{
+    font-size: 36px;
+    color: rgb(10, 169, 174);
+    margin: 50px;
+    font-style: italic;
+}
+.one h3{
+    text-align: left;
+    margin-left: 50px;
+    font-size: 24px;
+    line-height: 60px;
+    text-indent: 48px;
+    color: rgb(10, 169, 174);
+}

@@ -1,0 +1,181 @@
+section{
+    display: flex;
+    overflow-y: auto;
+    flex-direction: column;
+}
+.focus{
+
+}
+.navBox{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #e4453a;
+}
+.navList{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: .4rem;
+    width: 3.63rem;
+    margin: 0 auto;
+}
+.navList a{
+    display: block;
+    color: #fadddc;
+    font-size: 12px;
+}
+/* 关注列表 */
+.focusBox{
+    width: 3.63rem;
+    margin: 0 auto;
+    padding-top: .1rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+.focusList{
+    font-size: .16rem;
+    color: #050505;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    line-height: .22rem;
+    margin: .12rem 0;
+}
+.personInfo{
+    font-size: 10px;
+    color:#656565;  
+    display: flex;
+    flex-direction: column;
+    margin-right: .23rem;
+    text-align: center;
+}
+.focusPerson{
+    display: flex;
+    flex-shrink: 1;
+    overflow-x: auto;
+    margin-bottom: .12rem;
+}
+.personInfo img{
+    width: .46rem;
+    height: .46rem;;
+}
+/* 关注人的信息 */
+/* focusPeople */
+.focusPeople{
+    width: 3.63rem;
+    margin: 0 auto;
+    border-top: 1px solid #f2f2f2;
+}
+.peopleHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .2rem;
+}
+.peopelInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.peopelInfo img{
+    width: .38rem;
+    height: .38rem;
+    border-radius: 50%;
+    margin-right: .11rem;
+}
+.personId{
+    font-size: .15rem;
+    color: ;
+    display: block;
+}
+.pushInfo{
+    font-size: .15rem;
+    color: #5a5a5a;
+    line-height: .24rem;
+    /* display: block; */
+}
+.fansNum{
+    font-size: 10px;
+    color: #9a9a9a;
+    display: block;
+
+}
+.redFocus{
+    font-size: .12rem;;
+    color: #fff;;
+    width: .59rem;
+    height: .25rem;
+    background-color: #eb4b3f;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: .12rem;
+    margin-right: .1rem;
+}
+.redFocus .iconfont{
+    height: .15rem;
+}
+.peopleIntroct{
+    font-size: .16rem;
+    color: #363636;
+    line-height: .25rem;
+}
+.peopleBottom{
+    margin-left: .5rem;
+}
+.peopleBottom img{
+    width: 3.08rem;
+    height: 1.72rem;
+}
+.otherCreate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: .55rem;
+}
+.createList p{
+    display: flex;
+    justify-content: space-between;
+    margin-right: .5rem;
+}
+.otherCreate .iconfont{
+    display: block;
+    margin-right: .1rem;
+}
+.createList p :last-child{
+    font-size: 10px;
+    color: #898989;
+    display: block;
+}
+.createList{
+    display: flex;
+    justify-content: space-around;
+}
+/* 热门话题 */
+/* hotTitle */
+.hotTitle{
+    margin-left: .1rem;
+    /* width: 100%; */
+}
+.hotList{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.hotFireBox{
+    width: 1.47rem;
+    height: .73rem;
+    flex-shrink: 0;
+    margin-right: .1rem;
+}
+.hotFire{
+    width: 1.47rem;
+    height: .73rem;
+    background-image: url(../img/hot1.PNG);
+    background-size: 100%;
+    font-size: .16rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .05rem;
+    text-align: center;
+}

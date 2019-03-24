@@ -1,0 +1,163 @@
+body {
+    background: #fff;
+}
+
+.reg-top {
+    width: 100%;
+    height: 160px;
+    background: #fff;
+}
+.reg-topp {
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reg-topp h2 {
+    font-size: 1.75em;
+    font-weight: 100;
+}
+
+.reg-topp a {
+    color: #28bea0;
+    font-size: 0.96875em;
+}
+
+.reg-center {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    height: 10.5em;
+}
+
+.reg-center table {
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.reg-center td {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-right: 26px;
+}
+
+.reg-center input {
+    border: none;
+    border-bottom: 2px solid #e7e7e7;
+    height: 2.03em;
+    outline: none;
+}
+input-placeholder {
+    color: #e1e1e1;
+}
+
+.reg-center .one, .two {
+    /* background: url(../img/shouji.png) no-repeat 5px 1px; */
+    width: 100%;
+    padding-left: 25px;
+    background-size: 1.3125em 1.656255em;
+}
+
+/* .reg-center .two {
+    padding-left: 25px;
+    background: url(../img/yzm.png)no-repeat 5px 1px;
+    background-size: 1.3125em 1.656255em;
+} */
+
+.reg-center a {
+    display: block;
+    height: 2em;
+    width: 6.375em;
+    text-align: right;
+    /* border: 2px solid #e7e7e7; */
+    /* border-radius: 20px; */
+    line-height: 2em;
+    color: #919392;
+}
+
+.reg-center .wjmm {
+    margin: 0 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reg-submit {
+    height: 10em;
+}
+
+.reg-submit .ipt {
+    display: block;
+    height: 2.5em;
+    width: 18.6875em;
+    border-radius: 20px;
+    background-color: #92cec2;
+    border: none;
+    color: white;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.reg-submit p {
+    font-size: 0.71875em;
+    color: #b8b8b8;
+    display: block;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.reg-submit a {
+    color: #3fc5aa;
+    font-size: 0.8125em;
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.p {
+    font-size: 0.71825em;
+    color: #666666;
+    text-align: center;
+}
+
+.reg-bottom p {
+    display: block;
+}
+
+.reg-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.reg-bottom img {
+    width: 3.625em;
+    height: 3.59375em;
+    display: block;
+    margin: 0 auto;
+}
+
+.reg-bottom a {
+    text-align: center;
+    /* font-size: 0.625em; */
+    color: #acacac;
+}
+
+.zuidi {
+    /* margin-top:40px; */
+    font-size: 0.71875em;
+    color: #b8b8b8;
+    display: block;
+    margin-top: 27px;
+    text-align: center;
+}
+
+.zuidi a {
+    color: #42ceb9;
+}
